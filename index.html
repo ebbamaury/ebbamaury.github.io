@@ -201,35 +201,25 @@
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                            <div class="form-input-group" id="form-input-email">
+                                <i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                            <div class="form-input-group" id="form-input-name">
+                                <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Coming with a +1 or kids?"
-                                                                  required>
+                            <div class="form-input-group" id="form-input-plus-ones">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
+                            <div class="form-input-group"  id="form-input-invite-code">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
                             </div>
                         </div>
                     </div>
@@ -329,8 +319,12 @@
             document.getElementById('rsvp-thank-you').textContent = "Merci !";
             document.getElementById('rsvp-thank-you-message').textContent = "Nous sommes ravis de vous voir nous rejoindre pour notre grand jour.";
             document.getElementById('rsvp-confirm-attendance').textContent = "Confirmez votre présence";
-            document.getElementById('rsvp-attendance-message').textContent = "Nous vous serions reconnaissants de confirmer votre présence avant le 1er mars 2024";
+            document.getElementById('rsvp-attendance-message').textContent = "Merci de confirmer votre présence avant le 1er mars 2024";
             document.getElementById('rsvp-send-confirmation').textContent = "Envoyer la confirmation";
+            document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Votre adresse email" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Nom(s) et prénom(s)" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Combien de personne(s) à confirmer ?" required>';
+            document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';
         } else if (language === 'en') {
             document.getElementById('invitation-title').textContent = "We are getting married!";
             document.getElementById('invitation-content').innerHTML = "31<sup>st</sup> of August 2024 at Château d'Alphéran.";
@@ -350,8 +344,12 @@
             document.getElementById('rsvp-thank-you').textContent = "Thank you!";
             document.getElementById('rsvp-thank-you-message').textContent = "We are glad to see you join us on our big day.";
             document.getElementById('rsvp-confirm-attendance').textContent = "Confirm your attendance";
-            document.getElementById('rsvp-attendance-message').textContent = "We would greatly appreciate if you could RSVP before 1st of March 2024";
+            document.getElementById('rsvp-attendance-message').textContent = "Please confirm your presence before March 1, 2024";
             document.getElementById('rsvp-send-confirmation').textContent = "Send confirmation";
+            document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Your name(s)" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>';
+            document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';
         } else if (language === 'sv') {
             document.getElementById('invitation-title').textContent = "Vi ska gifta oss!";
             document.getElementById('invitation-content').textContent = "Lördagen den 31 augusti 2024 på Château d'Alphéran.";
@@ -371,8 +369,12 @@
             document.getElementById('rsvp-thank-you').textContent = "Tack!";
             document.getElementById('rsvp-thank-you-message').textContent = "Vi är glada att se att du är med oss ​​på vår stora dag.";
             document.getElementById('rsvp-confirm-attendance').textContent = "Bekräfta din närvaro";
-            document.getElementById('rsvp-attendance-message').textContent = "Vi skulle uppskatta mycket om du kunde OSA innan 1 mars 2024";
+            document.getElementById('rsvp-attendance-message').textContent = "Vänligen bekräfta din närvaro före 1 mars 2024";
             document.getElementById('rsvp-send-confirmation').textContent = "Skicka bekräftelse";
+            document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Din mail" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Namn(en)" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer konfirmerar du?" required>';
+            document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';
         }
     }
 </script>
