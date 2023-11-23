@@ -288,7 +288,9 @@
 </script>
 
 <script>
+    var language_selection = "en";
     function showSections(language) {
+        language_selection = language
         // Show the sections after language selection
         document.getElementById('invitation').style.display = 'block';
         document.getElementById('events').style.display = 'block';
