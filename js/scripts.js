@@ -184,7 +184,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Wedding Ebba & Amaury",
+            title: "Wedding Ebba and Amaury",
 
             // Event start date
             start: new Date('Aug 31, 2024 17:00'),
@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: "Château d'Alphéran",
 
             // Event Description
-            description: "We can't wait to see you on our big day!"
+            description: "We can't wait to see you on our big day! 🥳"
         }
     });
 
