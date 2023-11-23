@@ -203,8 +203,8 @@ html[xmlns] .flexslider .slides {
   width: 12px;
   height: 12px;
   display: block;
-  background: #5C5F6A;
-  background: rgba(92, 95, 106, 1);
+  background: #FFFFFF;
+  background: rgb(255, 255, 255);
   cursor: pointer;
   text-indent: -9999px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
