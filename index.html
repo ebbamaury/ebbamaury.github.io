@@ -163,13 +163,12 @@
 
 <section id="map" class="section-padding" style="display: none;">
     <div class="text-center">
-        <h3>Address</h3>
-        <p>Some suggestions</p>
+        <h3 id="address-title">Address</h3>
     </div>
     <div class="row">
         <div class="col-md-6 text-center">
-            <h5>Château d'Alphéran</h5>
-            <p>675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France</p>
+            <h5 id="address-name">Château d'Alphéran</h5>
+            <p id="address-description">675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France</p>
         </div>
         <div class="row text-center">
             <div class="col-md-6" style="padding: 5px;">
@@ -179,33 +178,6 @@
         </div>
     </div>
 </section>
-
-<section id="accomodations" class="section-padding" style="display: none;">
-    <div class="text-center">
-        <h3>Where to stay?</h3>
-        <p>Some suggestions</p>
-    </div>
-    <div class="row">
-        <div class="col-md-6 text-center">
-            <h5>Château d'Alphéran</h5>
-            <p>675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France</p>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-6" style="padding: 5px;">
-                <a class="btn btn-fill btn-small"
-                   href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                        class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-            </div>
-            <div class="col-md-6" style="padding: 5px;">
-                <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                    map</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
 
 <section class="rsvp text-center" id="rsvp" style="display: none;">
 
@@ -279,6 +251,35 @@
     </div>
 </section>
 
+<section id="accomodations" class="section-padding" style="display: none;">
+    <div class="text-center">
+        <h3>Where to stay?</h3>
+        <p>Some suggestions</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h5>Château d'Alphéran</h5>
+            <p>675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6" style="padding: 5px;">
+                <a class="btn btn-fill btn-small"
+                   href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                        class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+            </div>
+            <div class="col-md-6" style="padding: 5px;">
+                <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                    map</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
 <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
@@ -311,14 +312,14 @@
         // Show the sections after language selection
         document.getElementById('invitation').style.display = 'block';
         document.getElementById('events').style.display = 'block';
-        document.getElementById('accomodations').style.display = 'block';
         document.getElementById('map').style.display = 'block';
         document.getElementById('rsvp').style.display = 'block';
+        document.getElementById('accomodations').style.display = 'block';
 
         if (language === 'fr') {
-            document.getElementById('invitation-title').textContent = "Nous allons nous marier !"
-            document.getElementById('invitation-content').textContent = "Samedi 31 Août 2024 au château d'Alphéran."
-            document.getElementById('map-btn-text').textContent = "Afficher la carte"
+            document.getElementById('invitation-title').textContent = "Nous allons nous marier !";
+            document.getElementById('invitation-content').textContent = "Samedi 31 Août 2024 au château d'Alphéran.";
+            document.getElementById('map-btn-text').textContent = "Afficher la carte";
             document.getElementById('planning-title').textContent = 'Organisation';
             document.getElementById('day1').textContent = '31 août ';
             document.getElementById('event1').innerHTML = 'Cérémonie de mariage <span class="time"> 17h </span>';
@@ -328,10 +329,13 @@
             document.getElementById('dress-code-title').textContent = 'Quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-subtitle').textContent = 'Écrire quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-content').innerHTML = '<strong>Quelque chose sur le code vestimentaire.</strong><br> Plus d\'informations sur le code vestimentaire';
+            document.getElementById('address-title').textContent = "Adresse";
+            document.getElementById('address-name').textContent = "Château d'Alphéran";
+            document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France";
         } else if (language === 'en') {
-            document.getElementById('invitation-title').textContent = "We are getting married!"
-            document.getElementById('invitation-content').innerHTML = "31<sup>st</sup> of August 2024 at Château d'Alphéran."
-            document.getElementById('map-btn-text').textContent = "Show map"
+            document.getElementById('invitation-title').textContent = "We are getting married!";
+            document.getElementById('invitation-content').innerHTML = "31<sup>st</sup> of August 2024 at Château d'Alphéran.";
+            document.getElementById('map-btn-text').textContent = "Show map";
             document.getElementById('planning-title').textContent = 'Planning';
             document.getElementById('day1').textContent = '31st August';
             document.getElementById('event1').innerHTML = 'Wedding ceremony <span class="time"> 5PM</span>';
@@ -341,10 +345,13 @@
             document.getElementById('dress-code-title').textContent = 'Something about the dress code';
             document.getElementById('dress-code-subtitle').textContent = 'Write something about dress code';
             document.getElementById('dress-code-content').innerHTML = '<strong>Something about dress code.</strong><br>Something more about the dress code';
+            document.getElementById('address-title').textContent = "Address";
+            document.getElementById('address-name').textContent = "Château d'Alphéran";
+            document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France";
         } else if (language === 'sv') {
-            document.getElementById('invitation-title').textContent = "Vi ska gifta oss!"
-            document.getElementById('invitation-content').textContent = "Lördagen den 31 augusti 2024 på Alphéran slott."
-            document.getElementById('map-btn-text').textContent = "Visa karta"
+            document.getElementById('invitation-title').textContent = "Vi ska gifta oss!";
+            document.getElementById('invitation-content').textContent = "Lördagen den 31 augusti 2024 på Château d'Alphéran.";
+            document.getElementById('map-btn-text').textContent = "Visa karta";
             document.getElementById('planning-title').textContent = 'Planering';
             document.getElementById('day1').textContent = '31 augusti';
             document.getElementById('event1').innerHTML = 'Bröllopsceremoni <span class="time"> 17.00 </span>';
@@ -354,6 +361,9 @@
             document.getElementById('dress-code-title').textContent = 'Något om klädkoden';
             document.getElementById('dress-code-subtitle').textContent = 'Skriv något om klädkoden';
             document.getElementById('dress-code-content').innerHTML = '<strong>Något om klädkoden.</strong><br>Mer information om klädkoden';
+            document.getElementById('address-title').textContent = "Adress";
+            document.getElementById('address-name').textContent = "Château d'Alphéran";
+            document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, Frankrike";
         }
     }
 </script>
