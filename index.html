@@ -182,8 +182,8 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
+                        <h3 id="rsvp-thank-you">Thank you!</h3>
+                        <p id="rsvp-thank-you-message">We are glad to see you join us on our big day.</p>
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
@@ -194,8 +194,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Confirm your attendance</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of March 2024</p>
+                <h3 id="rsvp-confirm-attendance">Confirm your attendance</h3>
+                <p id="rsvp-attendance-message">We would greatly appreciate if you could RSVP before 1st of March 2024</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -237,7 +237,7 @@
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Send confirmation
+                        <span id="rsvp-send-confirmation">Send confirmation</span>
                     </button>
                 </form>
             </div>
@@ -326,6 +326,11 @@
             document.getElementById('address-title').textContent = "Adresse";
             document.getElementById('address-name').textContent = "Château d'Alphéran";
             document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France";
+            document.getElementById('rsvp-thank-you').textContent = "Merci !";
+            document.getElementById('rsvp-thank-you-message').textContent = "Nous sommes ravis de vous voir nous rejoindre pour notre grand jour.";
+            document.getElementById('rsvp-confirm-attendance').textContent = "Confirmez votre présence";
+            document.getElementById('rsvp-attendance-message').textContent = "Nous vous serions reconnaissants de confirmer votre présence avant le 1er mars 2024";
+            document.getElementById('rsvp-send-confirmation').textContent = "Envoyer la confirmation";
         } else if (language === 'en') {
             document.getElementById('invitation-title').textContent = "We are getting married!";
             document.getElementById('invitation-content').innerHTML = "31<sup>st</sup> of August 2024 at Château d'Alphéran.";
@@ -342,6 +347,11 @@
             document.getElementById('address-title').textContent = "Address";
             document.getElementById('address-name').textContent = "Château d'Alphéran";
             document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France";
+            document.getElementById('rsvp-thank-you').textContent = "Thank you!";
+            document.getElementById('rsvp-thank-you-message').textContent = "We are glad to see you join us on our big day.";
+            document.getElementById('rsvp-confirm-attendance').textContent = "Confirm your attendance";
+            document.getElementById('rsvp-attendance-message').textContent = "We would greatly appreciate if you could RSVP before 1st of March 2024";
+            document.getElementById('rsvp-send-confirmation').textContent = "Send confirmation";
         } else if (language === 'sv') {
             document.getElementById('invitation-title').textContent = "Vi ska gifta oss!";
             document.getElementById('invitation-content').textContent = "Lördagen den 31 augusti 2024 på Château d'Alphéran.";
@@ -358,6 +368,11 @@
             document.getElementById('address-title').textContent = "Adress";
             document.getElementById('address-name').textContent = "Château d'Alphéran";
             document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, Frankrike";
+            document.getElementById('rsvp-thank-you').textContent = "Tack!";
+            document.getElementById('rsvp-thank-you-message').textContent = "Vi är glada att se att du är med oss ​​på vår stora dag.";
+            document.getElementById('rsvp-confirm-attendance').textContent = "Bekräfta din närvaro";
+            document.getElementById('rsvp-attendance-message').textContent = "Vi skulle uppskatta mycket om du kunde OSA innan 1 mars 2024";
+            document.getElementById('rsvp-send-confirmation').textContent = "Skicka bekräftelse";
         }
     }
 </script>
