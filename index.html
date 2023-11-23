@@ -117,16 +117,16 @@
                 <div class="col-md-12 text-center">
                     <div class="wp3">
                         <p><strong id="day1">31st of August</strong></p>
-                        <h5 id="event1">Wedding ceremony Test 1<span class="time" id="time_event1"> 5PM</span></h5>
+                        <h5 id="event1">Wedding ceremony</h5><span class="time" id="time_event1"> 5PM</span>
                         <p></p>
                     </div>
                     <div class="wp5">
-                        <h5 id="event2">Dinner<span class="time" id="time_event2">7PM - 3AM</span></h5>
+                        <h5 id="event2">Dinner</h5><span class="time" id="time_event2">7PM - 3AM</span>
                         <p></p>
                     </div>
                     <div class="wp4">
                         <p><strong id="day2">1st September</strong></p>
-                        <h5 id="event3">Brunch<span class="time" id="time_event3">11AM-4PM</span></h5>
+                        <h5 id="event3">Brunch</h5><span class="time" id="time_event3">11AM-4PM</span>
                         <p></p>
                     </div>
                 </div>
@@ -311,15 +311,16 @@
         document.getElementById('rsvp').style.display = 'block';
 
         if (language === 'fr') {
+            document.getElementById('invitation-title').textContent = "Nous allons nous marier"
             document.getElementById('planning-title').textContent = 'Planification';
             document.getElementById('day1').textContent = '31 août';
             document.getElementById('time_event1').textContent = '17h'
             document.getElementById('event1').textContent = 'Cérémonie de mariage Test 1';
             document.getElementById('event2').textContent = 'Dîner';
-            document.getElementById('time_event2').textContent = '20h'
+            document.getElementById('time_event2').textContent = '20h - 3h'
             document.getElementById('day2').textContent = '1er septembre';
             document.getElementById('event3').textContent = 'Brunch';
-            document.getElementById('time_event3').textContent = '11h'
+            document.getElementById('time_event3').textContent = '11h - 16h'
             document.getElementById('dress-code-title').textContent = 'Quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-subtitle').textContent = 'Écrire quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-content').textContent = 'Quelque chose sur le code vestimentaire. Plus d\'informations sur le code vestimentaire';
@@ -329,10 +330,10 @@
             document.getElementById('time_event1').textContent = '5PM'
             document.getElementById('event1').textContent = 'Wedding ceremony Test 1';
             document.getElementById('event2').textContent = 'Dinner';
-            document.getElementById('time_event2').textContent = '7PM'
+            document.getElementById('time_event2').textContent = '7PM - 3AM'
             document.getElementById('day2').textContent = '1st September';
             document.getElementById('event3').textContent = 'Brunch';
-            document.getElementById('time_event3').textContent = '11AM'
+            document.getElementById('time_event3').textContent = '11AM - 4PM'
             document.getElementById('dress-code-title').textContent = 'Something about the dress code';
             document.getElementById('dress-code-subtitle').textContent = 'Write something about dress code';
             document.getElementById('dress-code-content').textContent = 'Something about dress code. Something more about the dress code';
@@ -342,10 +343,10 @@
             document.getElementById('time_event1').textContent = '17.00'
             document.getElementById('event1').textContent = 'Bröllopsceremoni Test 1';
             document.getElementById('event2').textContent = 'Middag';
-            document.getElementById('time_event2').textContent = '20.00'
+            document.getElementById('time_event2').textContent = '20.00 - 3.00'
             document.getElementById('day2').textContent = '1 september';
             document.getElementById('event3').textContent = 'Brunch';
-            document.getElementById('time_event3').textContent = '11.00'
+            document.getElementById('time_event3').textContent = '11.00 - 16.00'
             document.getElementById('dress-code-title').textContent = 'Något om klädkoden';
             document.getElementById('dress-code-subtitle').textContent = 'Skriv något om klädkoden';
             document.getElementById('dress-code-content').textContent = 'Något om klädkoden. Mer information om klädkoden';
