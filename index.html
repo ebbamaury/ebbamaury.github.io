@@ -117,16 +117,16 @@
                 <div class="col-md-12 text-center">
                     <div class="wp3">
                         <p><strong id="day1">31st of August</strong></p>
-                        <h5 id="event1">Wedding ceremony Test 1<span class="time"> 5PM</span></h5>
+                        <h5 id="event1">Wedding ceremony Test 1<span class="time" id="time_event1"> 5PM</span></h5>
                         <p></p>
                     </div>
                     <div class="wp5">
-                        <h5 id="event2">Dinner<span class="time">7PM - 3AM</span></h5>
+                        <h5 id="event2">Dinner<span class="time" id="time_event2">7PM - 3AM</span></h5>
                         <p></p>
                     </div>
                     <div class="wp4">
                         <p><strong id="day2">1st September</strong></p>
-                        <h5 id="event3">Brunch<span class="time">11AM-4PM</span></h5>
+                        <h5 id="event3">Brunch<span class="time" id="time_event3">11AM-4PM</span></h5>
                         <p></p>
                     </div>
                 </div>
@@ -313,10 +313,13 @@
         if (language === 'fr') {
             document.getElementById('planning-title').textContent = 'Planification';
             document.getElementById('day1').textContent = '31 août';
+            document.getElementById('time_event1').textContent = '17h'
             document.getElementById('event1').textContent = 'Cérémonie de mariage Test 1';
             document.getElementById('event2').textContent = 'Dîner';
+            document.getElementById('time_event2').textContent = '20h'
             document.getElementById('day2').textContent = '1er septembre';
             document.getElementById('event3').textContent = 'Brunch';
+            document.getElementById('time_event3').textContent = '11h'
             document.getElementById('dress-code-title').textContent = 'Quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-subtitle').textContent = 'Écrire quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-content').textContent = 'Quelque chose sur le code vestimentaire. Plus d\'informations sur le code vestimentaire';
