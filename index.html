@@ -145,9 +145,9 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
-                        <h3 class="text-center section-padding">Something about the dress code</h3>
-                        <h5>Write something about dress code</h5>
-                        <p>
+                        <h3 class="text-center section-padding" id="dress-code-title">Something about the dress code</h3>
+                        <h5 id="dress-code-subtitle">Write something about dress code</h5>
+                        <p id="dress-code-content">
                             <strong>Something about dress code</strong>
                             <br>
                             Something more about the dress code
@@ -317,15 +317,12 @@
             document.getElementById('event2').textContent = 'Dîner<span class="time">19h - 3h</span>';
             document.getElementById('day2').textContent = '1er septembre';
             document.getElementById('event3').textContent = 'Brunch<span class="time">11h-16h</span>';
-            // Add similar statements for other elements in the planning section
+            document.getElementById('dress-code-title').textContent = 'Quelque chose sur le code vestimentaire';
+            document.getElementById('dress-code-subtitle').textContent = 'Écrire quelque chose sur le code vestimentaire';
+            document.getElementById('dress-code-content').textContent = '<strong>Quelque chose sur le code vestimentaire</strong><br>Plus d\'informations sur le code vestimentaire';
+            // Add similar statements for other elements in the invitation section
         } else if (language === 'en') {
-            document.getElementById('planning-title').textContent = 'Planning';
-            document.getElementById('day1').textContent = '31st of August';
-            document.getElementById('event1').textContent = 'Wedding ceremony Test 1<span class="time"> 5PM</span>';
-            document.getElementById('event2').textContent = 'Dinner<span class="time">7PM - 3AM</span>';
-            document.getElementById('day2').textContent = '1st September';
-            document.getElementById('event3').textContent = 'Brunch<span class="time">11AM-4PM</span>';
-            // Add similar statements for other elements in the planning section
+            // Add content for English language
         } else if (language === 'sv') {
             // Add content for Swedish language
         }
