@@ -128,9 +128,25 @@
     var generateMarkup = function(calendars, clazz, calendarId) {
         var result = document.createElement('div');
 
-        result.innerHTML = '<label id="add-to-calendar-label" for="checkbox-for-' +
-            calendarId + '" class="btn btn-fill btn-small"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Add to Calendar</label>';
-            
+        var label;
+
+        // Choose label based on the language selection
+        if (language_selection === "en") {
+            label = '<label id="add-to-calendar-label" for="checkbox-for-' +
+                calendarId + '" class="btn btn-fill btn-small"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Add to Calendar</label>';
+        } else if (language_selection === "fr") {
+            label = '<label id="add-to-calendar-label" for="checkbox-for-' +
+                calendarId + '" class="btn btn-fill btn-small"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Ajouter au calendrier</label>';
+        } else if (language_selection === "sv") {
+            label = '<label id="add-to-calendar-label" for="checkbox-for-' +
+                calendarId + '" class="btn btn-fill btn-small"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Lägg till i kalendern</label>';
+        } else {
+            // Default to English if the language selection is not recognized
+            label = '<label id="add-to-calendar-label" for="checkbox-for-' +
+                calendarId + '" class="btn btn-fill btn-small"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Add to Calendar</label>';
+        }
+
+        result.innerHTML = label;
         result.innerHTML += '<input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox" id="checkbox-for-' + calendarId + '" type="checkbox">';
 
         Object.keys(calendars).forEach(function(services) {
