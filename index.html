@@ -78,9 +78,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <a href="#" class="btn btn-accent btn-large rsvp-btn">Français</a>
-                    <a href="#" class="btn btn-accent btn-large rsvp-btn">English</a>
-                    <a href="#" class="btn btn-accent btn-large rsvp-btn">Svenska</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections()">Français</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections()">English</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections()">Svenska</a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
     
 
 
-    <section id="invitation" class="section-padding">
+    <section id="invitation" class="section-padding" style="display: none;">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3>We are getting married</h3>
@@ -108,7 +108,7 @@
 
     
 
-<section class="events section-padding" id="events">
+<section class="events section-padding" id="events" style="display: none;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -177,7 +177,7 @@
 
 
 
-<section id="map" class="section-padding">
+<section id="map" class="section-padding" style="display: none;">
     <div class="row">
         <div class="col-md-6 text-center">
             <h5>Château d'Alphéran</h5>
@@ -192,7 +192,7 @@
     </div>
 </section>
 
-<section id="map" class="section-padding">
+<section id="map" class="section-padding" style="display: none;">
     <div class="text-center">
         <h3>Where to stay?</h3>
         <p>Some suggestions</p>
@@ -219,7 +219,7 @@
 
 
 
-<section class="rsvp text-center" id="rsvp">
+<section class="rsvp text-center" id="rsvp" style="display: none;">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -316,6 +316,15 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
+</script>
+
+<script>
+    function showSections() {
+        // Show the sections after language selection
+        document.getElementById('invitation').style.display = 'block';
+        document.getElementById('events').style.display = 'block';
+        // Add other sections here
+    }
 </script>
 
 </body>
