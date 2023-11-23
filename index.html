@@ -78,9 +78,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections()">Français</a>
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections()">English</a>
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections()">Svenska</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
         </div>
@@ -319,13 +319,24 @@
 </script>
 
 <script>
-    function showSections() {
+    function showSections(language) {
         // Show the sections after language selection
         document.getElementById('invitation').style.display = 'block';
         document.getElementById('events').style.display = 'block';
         document.getElementById('map').style.display = 'block';
         document.getElementById('rsvp').style.display = 'block';
-        // Add other sections here
+
+        if (language === 'fr') {
+            document.getElementById('invitation-title').textContent = 'Nous nous marions';
+            document.getElementById('invitation-content').textContent = '31 août 2024 au Château d\'Alphéran.';
+            // Add similar statements for other elements in the invitation section
+        } else if (language === 'en') {
+            document.getElementById('invitation-title').textContent = 'We are getting married';
+            document.getElementById('invitation-content').textContent = '31st of August 2024 at Château d\'Alphéran.';
+            // Add similar statements for other elements in the invitation section
+        } else if (language === 'sv') {
+            // Add content for Swedish language
+        }
     }
 </script>
 
