@@ -237,8 +237,8 @@
 
 <section id="accomodations" class="section-padding" style="display: none;">
     <div class="text-center">
-        <h3>Where to stay?</h3>
-        <p>Some suggestions</p>
+        <h3 id="accomodations-title">Where to stay?</h3>
+        <p id="accomodations-header">Some suggestions</p>
     </div>
     <div class="row">
         <div class="col-md-6 text-center">
@@ -326,6 +326,8 @@
             document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Nom(s) et prénom(s)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Combien de personne(s) à confirmer ?" required>';
             document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';
+            document.getElementById('accomodations-title').textContent = "Où loger ?";
+            document.getElementById('accomodations-header').textContent = "Quelques suggestions";
         } else if (language === 'en') {
             document.getElementById('invitation-title').textContent = "We are getting married!";
             document.getElementById('invitation-content').innerHTML = "31<sup>st</sup> of August 2024 at Château d'Alphéran.";
@@ -352,6 +354,8 @@
             document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Your name(s)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>';
             document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';
+            document.getElementById('accomodations-title').textContent = "Where to stay?";
+            document.getElementById('accomodations-header').textContent = "Some suggestions";
         } else if (language === 'sv') {
             document.getElementById('invitation-title').textContent = "Vi ska gifta oss!";
             document.getElementById('invitation-content').textContent = "Lördagen den 31 augusti 2024 på Château d'Alphéran.";
@@ -378,6 +382,8 @@
             document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Namn(en)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer konfirmerar du?" required>';
             document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';
+            document.getElementById('accomodations-title').textContent = "Var kan man bo?";
+            document.getElementById('accomodations-header').textContent = "Några förslag";
         }
     }
 </script>
