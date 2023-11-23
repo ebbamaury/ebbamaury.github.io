@@ -206,15 +206,15 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-name">
-                                <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
+                            <div class="form-input-group" id="form-input-plus-ones">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-plus-ones">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
+                            <div class="form-input-group" id="form-input-name">
+                                <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -379,8 +379,8 @@
             document.getElementById('rsvp-attendance-message').textContent = "Vänligen bekräfta din närvaro före 1 mars 2024";
             document.getElementById('rsvp-send-confirmation').textContent = "Skicka bekräftelse";
             document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Din mail" required>';
-            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Namn(en)" required>';
-            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer konfirmerar du?" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Namn?" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer bekräftar du?" required>';
             document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';
             document.getElementById('accomodations-title').textContent = "Var kan man bo?";
             document.getElementById('accomodations-header').textContent = "Några förslag";
