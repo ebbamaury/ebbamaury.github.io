@@ -89,19 +89,17 @@
 
 
     <section id="invitation" class="section-padding" style="display: none;">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 id="invitation-title">We are getting married</h3>
-                    <p id="invitation-content">31<sup>st</sup> of August 2024 at Château d'Alphéran.</p>
-                </div>
-                
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 id="invitation-title">We are getting married</h3>
+                <p id="invitation-content">31<sup>st</sup> of August 2024 at Château d'Alphéran.</p>
             </div>
-            <div class="row section-padding">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <a class="btn btn-accent btn-small" href="https://www.google.com/maps/place/Ch%C3%A2teau+d'Alph%C3%A9ran/@43.5903662,5.4160276,16.84z/data=!4m9!3m8!1s0x12c98b619722374b:0xe801ccc377fc06e4!5m2!4m1!1i2!8m2!3d43.5903813!4d5.4188831!16s%2Fg%2F1q54w21vm?entry=ttu" target="_blank">
-                        <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map
-                    </a>
-                </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" href="#" onclick="openGoogleMaps()">
+                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<span id="map-btn-text">Show map</span>
+                </a>
             </div>
         </div>
     </section>
@@ -329,10 +327,12 @@
         if (language === 'fr') {
             document.getElementById('invitation-title').textContent = 'Nous nous marions';
             document.getElementById('invitation-content').textContent = '31 août 2024 au Château d\'Alphéran.';
+            document.getElementById('map-btn-text').textContent = 'Afficher la carte';
             // Add similar statements for other elements in the invitation section
         } else if (language === 'en') {
             document.getElementById('invitation-title').textContent = 'We are getting married';
             document.getElementById('invitation-content').textContent = '31st of August 2024 at Château d\'Alphéran.';
+            document.getElementById('map-btn-text').textContent = 'Show map';
             // Add similar statements for other elements in the invitation section
         } else if (language === 'sv') {
             // Add content for Swedish language
