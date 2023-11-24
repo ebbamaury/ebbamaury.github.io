@@ -125,7 +125,7 @@
             (params.data.end !== undefined || params.data.duration !== undefined);
     };
 
-    var generateMarkup = function(calendars, clazz, calendarId) {
+    var generateMarkup = function(calendars, clazz, calendarId,language_selection) {
         var result = document.createElement('div');
 
         var label;
@@ -184,6 +184,6 @@
 
         return generateMarkup(generateCalendars(params.data),
             getClass(params),
-            getOrGenerateCalendarId(params));
+            getOrGenerateCalendarId(params),params.options.language_selection);
     };
 })(this);
