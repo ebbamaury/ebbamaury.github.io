@@ -74,12 +74,12 @@
 <body id="top">
 
     <section id="welcome" class="section-padding" style="text-align: center;">
-        <img src="img/ebbamaury_background.jpg" class="responsive-image" style="max-width: 1000px; width: 100%; height: auto; margin: 0 auto;">
+        <img src="img/ebbamaury_background.jpg" class="responsive-image" style="max-width: 750px; width: 100%; height: auto; margin: 0 auto;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English V.7.3.1</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English V.7.3.2</a>
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -201,13 +201,13 @@
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-email">
-                                <i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
+                            <div class="form-input-group" id="form-input-plus-ones">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-plus-ones">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
+                            <div class="form-input-group" id="form-input-email">
+                                <i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
                             </div>
                         </div>
                     </div>
