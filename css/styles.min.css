@@ -78,10 +78,11 @@ h5{
     padding:8px 30px
 }
 .btn-large{
-    padding:15px 40px
+    padding:15px 40px;
+    margin: 30px
 }
 .btn-margin-right{
-    margin-right:20px
+    margin:20px
 }
 section.intro,section.features-extra,section.rsvp{
     background:#fef1f2
@@ -837,6 +838,9 @@ header .member-actions{
 }
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder{
     color:#fba8af
+}
+.rsvp-form input::placeholder {
+    color: #444; /* Dark gray color */
 }
 footer .content{
     border-top:1px solid #fba8af;
