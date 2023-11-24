@@ -60,7 +60,7 @@ h5{
     border-color:#fba8af
 }
 .btn-fill{
-    color:#fef1f2;
+    color:#ffffff;
     border:solid 2px #fba8af;
     -moz-border-radius:40px;
     -webkit-border-radius:40px;
@@ -70,7 +70,7 @@ h5{
     background-color:#fba8af
 }
 .btn-fill:hover,.btn-fill:focus{
-    color:#fef1f2;
+    color:#ffffff;
     background-color:#f99099;
     border-color:#fba8af
 }
