@@ -11,23 +11,24 @@ p{
 }
 h1{
     font-family: 'Angella White Personal use font', sans-serif;
-    font-size:30px;
-    color:#3d4351;                                   
+    font-size:45px;
+    color:#644f44
+    /*color:3d4351;     */                              
 }
 h2{
     font-size:80px;
     font-weight:300;
-    color:#3d4351;
+    color:#644f44;
     font-family: 'Angella White Personal use font', sans-serif
 }
 h6{
     font-family: 'TT Chocolates', sans-serif;
     font-size:20px;
-    color:#3d4351;                                   
+    color:#644f44;                                   
 }
 
 h3{
-    color:#3d4351;
+    color:#644f44;
     font-size:30px;
     font-family: 'Angella White Personal use font', sans-serif;                                  
     font-weight:500;
@@ -40,7 +41,7 @@ h4{
 }
 h5{
     font-size:15px;
-    color:#3d4351;
+    color:#644f44;
     text-transform:uppercase;
     font-weight:500
 }
@@ -666,7 +667,7 @@ header .member-actions{
     color:rgba(28,54,83,.6)
 }
 .blog figcaption a.blog-post-title:hover,.blog figcaption a.blog-post-title:focus{
-    color:#3d4351
+    color:#644f44
 }
 #instagram img{
     width:100%
