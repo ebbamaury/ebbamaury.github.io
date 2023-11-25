@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English 2.8</a>
+                    <a class="btnlight" onclick="showSections('en')">English 2.9</a>
                     <a class="btnlight" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -318,19 +318,23 @@
     function showSections(language) {
         language_selection = language
 
+        // Show the sections after language selection
+        
+        document.getElementById('invitation').style.display = 'block';
+        invitationSection.style.opacity = 0;
+        document.getElementById('events').style.display = 'block';
+        document.getElementById('map').style.display = 'block';
+        document.getElementById('rsvp').style.display = 'block';
+        document.getElementById('accomodations').style.display = 'block';
+
+        invitationSection.style.transition = 'opacity 1s';
+        invitationSection.style.opacity = 1;
+
         // Example: Scroll to the 'events' section
         var invitationSection = document.getElementById('invitation');
         if (invitationSection) {
             invitationSection.scrollIntoView({ behavior: 'smooth' });
         }
-
-        // Show the sections after language selection
-        
-        document.getElementById('invitation').style.display = 'block';
-        document.getElementById('events').style.display = 'block';
-        document.getElementById('map').style.display = 'block';
-        document.getElementById('rsvp').style.display = 'block';
-        document.getElementById('accomodations').style.display = 'block';
 
         if (language === 'fr') {
             document.getElementById('invitation-title').textContent = "Nous allons nous marier !";
