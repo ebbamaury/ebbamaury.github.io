@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English 2.9</a>
+                    <a class="btnlight" onclick="showSections('en')">English 3.0</a>
                     <a class="btnlight" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -103,7 +103,7 @@
     
 
 
-    <section id="invitation" class="section-padding section-padding animate__animated animate__fadeIn" style="display: none;">
+    <section id="invitation" class="section-padding" style="display: none;">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3 id="invitation-title">We are getting married.</h3>
@@ -115,7 +115,7 @@
 
     
 
-    <section class="events section-padding section-padding animate__animated animate__fadeIn" id="events" style="display: none;">
+    <section class="events section-padding" id="events" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -251,7 +251,7 @@
     </div>
 </section>
 
-<section id="accomodations" class="section-padding section-padding animate__animated animate__fadeIn" style="display: none; background: url('img/background_bottom.svg') center center no-repeat; background-size: cover;">
+<section id="accomodations" class="section-padding" style="display: none; background: url('img/background_bottom.svg') center center no-repeat; background-size: cover;">
     <div class="text-center">
         <h3 id="accomodations-title">Where to stay?</h3>
         <p id="accomodations-header">Some suggestions</p>
@@ -317,24 +317,7 @@
     var language_selection = "en";
     function showSections(language) {
         language_selection = language
-
-        // Show the sections after language selection
         
-        document.getElementById('invitation').style.display = 'block';
-        invitationSection.style.opacity = 0;
-        document.getElementById('events').style.display = 'block';
-        document.getElementById('map').style.display = 'block';
-        document.getElementById('rsvp').style.display = 'block';
-        document.getElementById('accomodations').style.display = 'block';
-
-        invitationSection.style.transition = 'opacity 1s';
-        invitationSection.style.opacity = 1;
-
-        // Example: Scroll to the 'events' section
-        var invitationSection = document.getElementById('invitation');
-        if (invitationSection) {
-            invitationSection.scrollIntoView({ behavior: 'smooth' });
-        }
 
         if (language === 'fr') {
             document.getElementById('invitation-title').textContent = "Nous allons nous marier !";
@@ -424,6 +407,22 @@
             document.getElementById('accomodations-header').textContent = "Några förslag";
             document.getElementById('accomodation-visit-webpage-btn-1').textContent = "Besök webbsida";
         }
+
+
+        // Show the sections after language selection
+        
+        document.getElementById('invitation').style.display = 'block';
+        document.getElementById('invitation').style.opacity = 0;
+        document.getElementById('events').style.display = 'block';
+        document.getElementById('map').style.display = 'block';
+        document.getElementById('rsvp').style.display = 'block';
+        document.getElementById('accomodations').style.display = 'block';
+
+        document.getElementById('invitation').style.transition = 'opacity 1s';
+        document.getElementById('invitation').style.opacity = 1;
+
+        
+        document.getElementById('invitation').scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 
