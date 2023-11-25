@@ -56,7 +56,7 @@ h5{
     text-transform: uppercase;
     cursor: pointer; /* Add this to make the text act as a normal button */
     transition: font-size 0.2s, color 0.2s; /* Add transition for smooth size and color change */
-    margin: 20px; /* Add margin to the button */
+    margin: 30px; /* Add margin to the button */
 }
 
 .btnlight:hover {
