@@ -410,19 +410,21 @@
 
 
         // Show the sections after language selection
-        
-        document.getElementById('invitation').style.display = 'block';
-        document.getElementById('invitation').style.opacity = 0;
+        invitationSection = document.getElementById('invitation')
+        invitationSection.style.opacity = 0;
+        invitationSection.style.display = 'block';
         document.getElementById('events').style.display = 'block';
         document.getElementById('map').style.display = 'block';
         document.getElementById('rsvp').style.display = 'block';
         document.getElementById('accomodations').style.display = 'block';
 
-        document.getElementById('invitation').style.transition = 'opacity 1s';
-        document.getElementById('invitation').style.opacity = 1;
+        invitationSection.style.transition = 'opacity 1s';
+        invitationSection.style.opacity = 1;
 
         
-        document.getElementById('invitation').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+            invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 1000);
     }
 </script>
 
