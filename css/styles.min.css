@@ -89,6 +89,9 @@ h5{
 section.intro,section.features-extra,section.rsvp{
     background:#fef1f2
 }
+section.welcome,section.map,section.invitation,section.accomodations{
+    background: #fef8f0;
+}
 section.features,section.events,section.blog{
     background:#fef1f2
 }
@@ -133,10 +136,10 @@ ul li{
     list-style:none
 }
 section .header{
-    padding-bottom:30px
+    padding-bottom:20px
 }
 .section-padding{
-    padding:40px 0
+    padding:20px 0
 }
 .section-border{
     border-bottom:1px solid #fef1f2
@@ -356,7 +359,7 @@ section .header{
     width:100%
 }
 header{
-    padding:50px 0;
+    padding:30px 0;
     border-bottom:solid 1px rgba(255,255,255,1);
     position:relative;
     width:1170px;
@@ -386,7 +389,7 @@ header ul.primary-nav li{
 }
 header ul.primary-nav li a{
     color:#fef1f2;
-    padding-right:25px
+    padding-right:20px
 }
 header ul.primary-nav li a:hover{
     color:#fba8af
@@ -440,7 +443,7 @@ header .member-actions{
     width:80%
 }
 #intro{
-    padding-top:40px
+    padding-top:20px
 }
 #intro img{
     width:100%;
@@ -757,7 +760,7 @@ header .member-actions{
 #map-content{
     margin-top:40px;
     padding:50px 60px;
-    background:#fef1f2;
+    background:#fef8f0;
     -webkit-transition:opacity .5s,visibility .6s,margin-top .5s;
     transition:opacity .5s,visibility .6s,margin-top .5s
 }
