@@ -12,7 +12,7 @@
     }
 }
 .fade-in {
-    animation: fadeIn 3.5s ease-out; /* Adjust the duration and easing as needed */
+    animation: fadeIn 5s ease-out; /* Adjust the duration and easing as needed */
     animation-fill-mode: forwards; /* Keeps the last frame of the animation */
 }
 p{
