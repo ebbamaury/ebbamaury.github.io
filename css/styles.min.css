@@ -4,10 +4,13 @@
 @import"https://fonts.cdnfonts.com/css/angella-white-personal-use-font";
 @import"https://fonts.cdnfonts.com/css/tt-chocolates";
 p{
-    font-size:15px;
+    font-size:16px;
     line-height:29px;
-    color:rgba(28,54,83,.6);
-    padding-bottom:20px
+    /*color:rgba(28,54,83,.6);*/
+    color:#644f44;
+    padding-bottom:20px;
+    font-family: 'TT Chocolates', sans-serif; 
+
 }
 h1{
     font-family: 'Angella White Personal use font', sans-serif;
@@ -47,12 +50,17 @@ h5{
     font-weight:500;
     font-family: 'TT Chocolates', sans-serif;
 }
-p{
-    font-size:20px;
-    color:#644f44;
-    text-transform:uppercase;
-    font-weight:500;
-    font-family: 'TT Chocolates', sans-serif; 
+
+.btn-light {
+    text-decoration: underline;
+    font-family: 'TT Chocolates', sans-serif;
+    color: #644f44;
+    text-transform: uppercase;
+    cursor: pointer; /* Add this to make the text act as a normal button */
+    transition: font-size 0.2s; /* Add transition for smooth size change */
+}
+.btn-light:hover {
+    font-size: 1.1em; /* Increase font size on hover */
 }
 .btn{
     font-size:16px;
