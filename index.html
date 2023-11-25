@@ -79,17 +79,17 @@
         <!--<img src="img/ebbamaury_background.jpg" class="responsive-image" style="max-width: 750px; width: 100%; height: auto; margin: 0 auto;">-->
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 200px;">
-                <h2 id="page-title">Ebba + Amaury</h2>
+                <h2 id="page-title"></h2>
                 <hr style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
-                <h6 id="page-subtitle" style="margin-top: 25px;">31.08.2024</h6>
-                <h1 id="location-title">Château d 'Alphéran</h1>
+                <h6 id="page-subtitle" style="margin-top: 25px;"></h6>
+                <h1 id="location-title"></h1>
             </div>            
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English v1.5</a>
+                    <a class="btnlight" onclick="showSections('en')">English v1.6</a>
                     <a class="btnlight" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -311,6 +311,28 @@
 
     // Display the number of days remaining
     document.getElementById("days-remaining").innerHTML = "Days remaining until the wedding: " + daysRemaining;
+</script>
+
+<script>
+    // Function to simulate typing effect
+    function typeText(element, text, speed) {
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    }
+
+    // Simulate typing for each element
+    window.onload = function() {
+        typeText(document.getElementById('page-title'), 'Ebba + Amaury', 100); // Adjust speed as needed
+        typeText(document.getElementById('page-subtitle'), '31.08.2024', 100);
+        typeText(document.getElementById('location-title'), 'Château d\'Alphéran', 100);
+    };
 </script>
 
 <script>
