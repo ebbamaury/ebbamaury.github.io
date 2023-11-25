@@ -81,17 +81,17 @@
         <!--<img src="img/ebbamaury_background.jpg" class="responsive-image" style="max-width: 750px; width: 100%; height: auto; margin: 0 auto;">-->
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 200px;">
-                <h2 id="page-title-placeholder"></h2>
+                <h2 id="page-title">Ebba + Amaury</h2>
                 <hr style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
-                <h6 id="page-subtitle-placeholder" style="margin-top: 25px;"></h6>
-                <h1 id="location-title-placeholder"></h1>
-            </div>          
+                <h6 id="page-subtitle" style="margin-top: 25px;">31.08.2024</h6>
+                <h1 id="location-title">Château d'Alphéran</h1>
+            </div>                 
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English v1.7</a>
+                    <a class="btnlight" onclick="showSections('en')">English v1.8</a>
                     <a class="btnlight" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -315,30 +315,6 @@
     document.getElementById("days-remaining").innerHTML = "Days remaining until the wedding: " + daysRemaining;
 </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var options = {
-            strings: ["Ebba + Amaury"],
-            typeSpeed: 50, // Typing speed in milliseconds
-            onComplete: function () {
-                // When the title is typed, start typing the subtitle
-                new Typed('#page-subtitle-placeholder', {
-                    strings: ["31.08.2024"],
-                    typeSpeed: 50,
-                    onComplete: function () {
-                        // When the subtitle is typed, start typing the location
-                        new Typed('#location-title-placeholder', {
-                            strings: ["Château d 'Alphéran"],
-                            typeSpeed: 50
-                        });
-                    }
-                });
-            }
-        };
-
-        new Typed('#page-title-placeholder', options);
-    });
-</script>
 
 
 <script>
