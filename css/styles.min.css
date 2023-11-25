@@ -9,7 +9,6 @@
     display: inline-block; /* Display as inline block to allow opacity animation */
     animation: typing 1s forwards; /* Use the typing animation for 1 second */
 }
-
 @keyframes typing {
     from {
         width: 0; /* Initially set width to 0 */
