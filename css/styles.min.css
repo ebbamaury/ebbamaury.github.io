@@ -13,15 +13,16 @@ h1{
 }
 h2{
     font-size:40px;
-    font-weight:300;
-    color:#3d4351
+    font-weight:600;
+    color:#3d4351;
+    font-family: 'Angella White Personal use font', sans-serif
 }
 h3{
     color:#3d4351;
     font-size:18px;
     font-family: 'Angella White Personal use font', sans-serif;                                  
     font-weight:700;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     letter-spacing:3px;
     line-height:29px
 }
