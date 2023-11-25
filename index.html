@@ -80,18 +80,18 @@
     <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.svg') center center no-repeat; background-size: cover;">
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 200px;">
-                <h2 id="page-title">Ebba + Amaury</h2>
-                <hr id="subtitle-line" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
-                <h6 id="page-subtitle" style="margin-top: 25px;">31.08.2024</h6>
-                <h1 id="location-title">Château d'Alphéran</h1>
+                <h2 id="page-title" class="fade-in">Ebba + Amaury</h2>
+                <hr id="subtitle-line" class="fade-in" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
+                <h6 id="page-subtitle" class="fade-in" style="margin-top: 25px;">31.08.2024</h6>
+                <h1 id="location-title" class="fade-in">Château d 'Alphéran</h1>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
-                    <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English v2.6</a>
-                    <a class="btnlight" onclick="showSections('sv')">Svenska</a>
+                    <a class="btnlight fade-in" onclick="showSections('fr')">Français</a>
+                    <a class="btnlight fade-in" onclick="showSections('en')">English v2.7</a>
+                    <a class="btnlight fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English 1.8</a>
@@ -302,29 +302,6 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
-</script>
-<script>
-    // Function to type text slowly
-function typeText(element, text) {
-    let index = 0;
-    const intervalId = setInterval(function () {
-        element.textContent += text[index];
-        index++;
-
-        if (index === text.length) {
-            clearInterval(intervalId);
-            // Trigger the transition effect by setting opacity to 1
-            element.style.opacity = 1;
-        }
-    }, 100); // Adjust the interval duration for typing speed
-}
-
-// Call the typeText function for each element
-document.addEventListener("DOMContentLoaded", function () {
-    typeText(document.getElementById('page-title'), "Ebba + Amaury");
-    typeText(document.getElementById('page-subtitle'), "31.08.2024");
-    typeText(document.getElementById('location-title'), "Château d'Alphéran");
-});
 </script>
 
 <script>
