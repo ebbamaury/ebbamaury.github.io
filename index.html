@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English 1.0</a>
+                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English 1.1</a>
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -93,6 +93,7 @@
             <div class="col-md-12 text-center">
                 <h3 id="invitation-title">We are getting married.</h3>
                 <p id="invitation-content">31<sup>st</sup> of August 2024 at Château d'Alphéran.</p>
+                <p id="days-remaining"></p>
             </div>
         </div>
     </section>
@@ -285,6 +286,16 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
+</script>
+
+<script>
+    // Calculate the number of days remaining
+    var weddingDate = new Date("Aug 31, 2024").getTime();
+    var currentDate = new Date().getTime();
+    var daysRemaining = Math.ceil((weddingDate - currentDate) / (1000 * 60 * 60 * 24));
+
+    // Display the number of days remaining
+    document.getElementById("days-remaining").innerHTML = "Days remaining until the wedding: " + daysRemaining;
 </script>
 
 <script>
