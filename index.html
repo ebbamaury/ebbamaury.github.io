@@ -78,20 +78,19 @@
 <body id="top" style="background-color: #fef8f0;">
 
     <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.svg') center center no-repeat; background-size: cover;">
-        <!--<img src="img/ebbamaury_background.jpg" class="responsive-image" style="max-width: 750px; width: 100%; height: auto; margin: 0 auto;">-->
         <div class="row">
-            <div class="col-md-12 text-center typewriter" style="margin-top: 200px;">
-                <h2 id="page-title" >Ebba + Amaury</h2>
-                <hr style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
-                <h6 id="page-subtitle"  style="margin-top: 25px;">31.08.2024</h6>
-                <h1 id="location-title" >Château d 'Alphéran</h1>
-            </div>               
+            <div class="col-md-12 text-center" style="margin-top: 200px;">
+                <h2 id="page-title">Ebba + Amaury</h2>
+                <hr id="subtitle-line" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
+                <h6 id="page-subtitle" style="margin-top: 25px;">31.08.2024</h6>
+                <h1 id="location-title">Château d'Alphéran</h1>
+            </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English v2.5</a>
+                    <a class="btnlight" onclick="showSections('en')">English v2.6</a>
                     <a class="btnlight" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -304,7 +303,29 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
+<script>
+    // Function to type text slowly
+function typeText(element, text) {
+    let index = 0;
+    const intervalId = setInterval(function () {
+        element.textContent += text[index];
+        index++;
 
+        if (index === text.length) {
+            clearInterval(intervalId);
+            // Trigger the transition effect by setting opacity to 1
+            element.style.opacity = 1;
+        }
+    }, 100); // Adjust the interval duration for typing speed
+}
+
+// Call the typeText function for each element
+document.addEventListener("DOMContentLoaded", function () {
+    typeText(document.getElementById('page-title'), "Ebba + Amaury");
+    typeText(document.getElementById('page-subtitle'), "31.08.2024");
+    typeText(document.getElementById('location-title'), "Château d'Alphéran");
+});
+</script>
 
 <script>
     // Calculate the number of days remaining
