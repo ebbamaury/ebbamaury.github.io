@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight" onclick="showSections('en')">English 3.0</a>
+                    <a class="btnlight" onclick="showSections('en')">English 3.1</a>
                     <a class="btnlight" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -409,20 +409,19 @@
         }
 
 
-        // Show the sections after language selection
-        invitationSection = document.getElementById('invitation')
-        invitationSection.style.opacity = 0;
-        invitationSection.style.display = 'block';
+
         document.getElementById('events').style.display = 'block';
         document.getElementById('map').style.display = 'block';
         document.getElementById('rsvp').style.display = 'block';
         document.getElementById('accomodations').style.display = 'block';
 
-        invitationSection.style.transition = 'opacity 1s';
-        invitationSection.style.opacity = 1;
+        invitationSection = document.getElementById('invitation')
+        invitationSection.style.opacity = 0;
+        invitationSection.style.display = 'block';        
 
         
         setTimeout(() => {
+            invitationSection.style.opacity = 1;
             invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 1000);
     }
