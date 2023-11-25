@@ -48,7 +48,7 @@ h5{
     color:#644f44;
     font-family: 'TT Chocolates', sans-serif;
 }
-.btn-light {
+.btnlight {
     text-decoration: underline;
     font-family: 'TT Chocolates', sans-serif;
     font-size: 20px;
@@ -59,7 +59,7 @@ h5{
     margin: 20px; /* Add margin to the button */
 }
 
-.btn-light:hover {
+.btnlight:hover {
     font-size: 1.1em; /* Increase font size on hover */
     color: #644f44ac; /* Change color on hover */
 }
