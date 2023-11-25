@@ -6,8 +6,6 @@
 /* CSS for the typing animation */
 .typing-text {
     opacity: 0; /* Initially set opacity to 0 */
-    display: inline-block; /* Display as inline block to allow opacity animation */
-    animation: typing 1s forwards; /* Use the typing animation for 1 second */
 }
 @keyframes typing {
     from {
