@@ -129,13 +129,13 @@ h5{
 .btn-margin-right{
     margin:12px
 }
-section.intro,section.features-extra,section.rsvp{
+section.intro,section.features-extra{
     background:#fef1f2
 }
-section.welcome,section.map,section.invitation,section.accomodations{
+section.welcome,section.events,section.accomodations,section.rsvp{
     background: #fef8f0;
 }
-section.features,section.events,section.blog{
+section.features,section.invitation,section.blog,section.map{
     background:#fef1f2
 }
 .group:after{
