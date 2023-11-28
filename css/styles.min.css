@@ -88,7 +88,7 @@ h5{
 }
 .btn:hover,.btn:focus{
     color:#ffffff;
-    border-color:#fba8af;
+    border-color:#fa9099;
     background-color:#f8979f
 }
 .btn-white{
@@ -101,23 +101,23 @@ h5{
     border-color:#fef1f2
 }
 .btn-white:hover,.btn-white:focus{
-    color:#fba8af;
-    border-color:#fba8af
+    color:#fa9099;
+    border-color:#fa9099
 }
 .btn-fill{
     color:#ffffff;
-    border:solid 2px #fba8af;
+    border:solid 2px #fa9099;
     -moz-border-radius:40px;
     -webkit-border-radius:40px;
     border-radius:40px;
     display:inline-block;
     text-transform:uppercase;
-    background-color:#fba8af
+    background-color:#fa9099
 }
 .btn-fill:hover,.btn-fill:focus{
     color:#ffffff;
-    background-color:#f99099;
-    border-color:#fba8af
+    background-color:#f97782;
+    border-color:#fa9099
 }
 .btn-small{
     padding:8px 30px
@@ -150,7 +150,7 @@ section.features,section.invitation,section.blog,section.map{
     margin:0
 }
 a{
-    color:#fba8af;
+    color:#fa9099;
     -webkit-transition-timing-function:ease;
     transition-timing-function:ease;
     -webkit-transition-duration:200ms;
@@ -159,7 +159,7 @@ a{
     transition-property:color,border-color,background-color
 }
 a:hover,a:focus{
-    color:#fba8af;
+    color:#fa9099;
     text-decoration:none
 }
 body{
@@ -435,7 +435,7 @@ header ul.primary-nav li a{
     padding-right:20px
 }
 header ul.primary-nav li a:hover{
-    color:#fba8af
+    color:#fa9099
 }
 header ul.primary-nav li:last-child a{
     padding-right:0px
@@ -447,7 +447,7 @@ header ul.member-actions li a{
     color:#fef1f2
 }
 header ul.member-actions li a:hover{
-    color:#fba8af
+    color:#fa9099
 }
 header .header-nav{
     display:inline-block
@@ -471,7 +471,7 @@ header .member-actions{
 }
 .intro span.icon{
     font-size:40px;
-    color:#fba8af;
+    color:#fa9099;
     font-weight:bold
 }
 .intro-icon{
@@ -507,7 +507,7 @@ header .member-actions{
 }
 .features span.icon{
     font-size:35px;
-    color:#fba8af;
+    color:#fa9099;
     font-weight:bold
 }
 .features .feature-icon{
@@ -846,14 +846,14 @@ header .member-actions{
     position:relative
 }
 .rsvp .rsvp-form .form-input-group i{
-    color:#fba8af;
+    color:#fa9099;
     font-size:16px
 }
 .rsvp .rsvp-form .form-input-group i:after{
     content:"";
     height:30px;
     width:1px;
-    border-right:solid 1px #fba8af;
+    border-right:solid 1px #fa9099;
     position:absolute;
     top:50%;
     left:30px;
@@ -876,22 +876,22 @@ header .member-actions{
     border:none
 }
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{
-    color:#fba8af
+    color:#fa9099
 }
 .rsvp .rsvp-form .form-input-group input:-moz-placeholder{
-    color:#fba8af
+    color:#fa9099
 }
 .rsvp .rsvp-form .form-input-group input::-moz-placeholder{
-    color:#fba8af
+    color:#fa9099
 }
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder{
-    color:#fba8af
+    color:#fa9099
 }
 .rsvp-form input::placeholder {
     color: #444; /* Dark gray color */
 }
 footer .content{
-    border-top:1px solid #fba8af;
+    border-top:1px solid #fa9099;
     padding-bottom:20px
 }
 footer .to-top-wrapper{
