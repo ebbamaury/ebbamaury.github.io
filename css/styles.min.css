@@ -864,7 +864,8 @@ header .member-actions{
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-    margin-left:20px
+    margin-left:20px;
+    color: #644f44
 }
 .rsvp .rsvp-form .form-input-group input{
     padding-left:68px;
@@ -873,7 +874,8 @@ header .member-actions{
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     border-radius:6px;
-    border:none
+    border:none;
+    color: #644f44
 }
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{
     color:#fa9099
