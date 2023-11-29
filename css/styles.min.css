@@ -60,17 +60,32 @@ h5{
     color:#644f44;
     font-family: 'TT Chocolates', sans-serif;
 }
+/*
 .btnlight {
     text-decoration: underline;
     font-family: 'TT Chocolates', sans-serif;
     font-size: 20px;
     color: #644f44;
     text-transform: uppercase;
-    cursor: pointer; /* Add this to make the text act as a normal button */
-    transition: font-size 0.2s, color 0.2s; /* Add transition for smooth size and color change */
-    margin: 30px; /* Add margin to the button */
+    cursor: pointer; 
+    transition: font-size 0.2s, color 0.2s; 
+    margin: 30px; 
 }
+*/
 
+.btnlight {
+    display: inline-block; /* Make the button a block element */
+    padding: 10px 20px; /* Add padding to create the rectangular shape */
+    border: 2px solid #644f44; /* Add border for the button */
+    background-color: transparent; /* Set background color to transparent */
+    font-family: 'TT Chocolates', sans-serif;
+    font-size: 20px;
+    color: #644f44;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: font-size 0.2s, color 0.2s, background-color 0.2s, border-color 0.2s; /* Add transition for smooth changes */
+    margin: 30px;
+}
 .btnlight:hover {
     /*font-size: 1.5em; /* Increase font size on hover */
     color: #644f44ac; /* Change color on hover */
