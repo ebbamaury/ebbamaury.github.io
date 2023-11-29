@@ -75,7 +75,7 @@ h5{
 
 .btnlight {
     display: inline-block; /* Make the button a block element */
-    padding: 10px 20px; /* Add padding to create the rectangular shape */
+    padding: 5px 10px; /* Add padding to create the rectangular shape */
     border: 2px solid #644f44; /* Add border for the button */
     background-color: transparent; /* Set background color to transparent */
     font-family: 'TT Chocolates', sans-serif;
@@ -83,13 +83,13 @@ h5{
     color: #644f44;
     text-transform: uppercase;
     cursor: pointer;
-    transition: font-size 0.2s, color 0.2s, background-color 0.2s, border-color 0.2s; /* Add transition for smooth changes */
+    transition: font-size 0.2s, color 0.2s, background-color 0.2s, border-color 0.2s, transform 0.4s; /* Add transition for smooth changes */
     margin: 30px;
 }
 .btnlight:hover {
     /*font-size: 1.5em; /* Increase font size on hover */
     color: #644f44ac; /* Change color on hover */
-    transform: scale(1.25); /* Increase size on hover */
+    transform: scale(1.05); /* Increase size on hover */
 }
 
 .btn{
