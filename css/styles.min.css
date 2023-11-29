@@ -861,7 +861,8 @@ header .member-actions{
     border-radius:5px;
     border:solid 1px #fff;
     text-align:left;
-    position:relative
+    position:relative;
+    min-width: 200px;
 }
 .rsvp .rsvp-form .form-input-group i{
     color:#fa9099;
