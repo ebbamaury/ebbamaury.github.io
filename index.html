@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight fade-in" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight fade-in" onclick="showSections('en')">English v4.11</a>
+                    <a class="btnlight fade-in" onclick="showSections('en')">English v4.12</a>
                     <a class="btnlight fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -253,7 +253,7 @@
 </section>
 
 
-<section id="accomodations" class="section-extrapadding" style="display: none; background: url('img/background_bottom.svg') center center no-repeat; background-size: cover;">
+<section id="accomodations" class="section-padding" style="display: none; background: url('img/background_bottom.svg') center center no-repeat; background-size: cover;">
     <div class="text-center">
         <h3 id="accomodations-title">Where to stay?</h3>
         <p id="accomodations-header">Some suggestions</p>
@@ -353,7 +353,6 @@
     // Display the number of days remaining
     document.getElementById("days-remaining").innerHTML = "Days remaining until the wedding: " + daysRemaining;
 </script>
-
 
 
 <script>
@@ -459,15 +458,36 @@
         invitationSection = document.getElementById('invitation')
         invitationSection.style.display = 'block';        
 
-        if (invitationSection) {
-            invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start', duration: 2500 });
-        }
+        scrollBy(document.body, invitationSection.offsetTop, 2500, easeInOutCubic);
+            
         
         /*setTimeout(() => {
             invitationSection.style.opacity = 1;
             invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 100);*/
     }
+
+    function scrollBy(element, value, duration, easingFunc) {
+            var startTime;
+            var startPos = element.scrollTop;
+            var scrollIntendedDestination = startPos + value;
+            var scrollEndValue = Math.min(Math.max(scrollIntendedDestination, 0), element.scrollHeight - element.clientHeight);
+
+            var scroll = function(timestamp) {
+                startTime = startTime || timestamp;
+                var elapsed = timestamp - startTime;
+                element.scrollTop = startPos + (scrollEndValue - startPos) * easingFunc(elapsed / duration);
+                elapsed <= duration && window.requestAnimationFrame(scroll);
+            };
+
+            if (startPos !== scrollEndValue) {
+                window.requestAnimationFrame(scroll);
+            }
+        }
+
+        var easeInOutCubic = function(t) {
+            return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+        };
 </script>
 
 
