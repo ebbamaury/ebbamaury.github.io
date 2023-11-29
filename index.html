@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight fade-in" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight fade-in" onclick="showSections('en')">English v4.13</a>
+                    <a class="btnlight fade-in" onclick="showSections('en')">English v4.14</a>
                     <a class="btnlight fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -459,34 +459,35 @@
         invitationSection.style.display = 'block';        
 
         
-        
+        smoothScrollTo('invitation')
         /*setTimeout(() => {
             invitationSection.style.opacity = 1;
             invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 100);*/
     }
 
-    function scrollBy(element, value, duration, easingFunc) {
+    function smoothScrollTo(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
             var startTime;
-            var startPos = element.scrollTop;
-            var scrollIntendedDestination = startPos + value;
-            var scrollEndValue = Math.min(Math.max(scrollIntendedDestination, 0), element.scrollHeight - element.clientHeight);
+            var startPos = window.scrollY;
+            var endPos = section.offsetTop;
+            var duration = 2500;
 
             var scroll = function(timestamp) {
                 startTime = startTime || timestamp;
                 var elapsed = timestamp - startTime;
-                element.scrollTop = startPos + (scrollEndValue - startPos) * easingFunc(elapsed / duration);
+                window.scrollTo(0, startPos + (endPos - startPos) * easeInOutCubic(elapsed / duration));
                 elapsed <= duration && window.requestAnimationFrame(scroll);
             };
 
-            if (startPos !== scrollEndValue) {
-                window.requestAnimationFrame(scroll);
-            }
+            window.requestAnimationFrame(scroll);
         }
+    }
 
-        var easeInOutCubic = function(t) {
-            return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-        };
+    var easeInOutCubic = function(t) {
+        return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+    };
 </script>
 
 
