@@ -84,7 +84,7 @@ h5{
     text-transform: uppercase;
     cursor: pointer;
     transition: font-size 0.2s, color 0.2s, background-color 0.2s, border-color 0.2s, transform 0.4s; /* Add transition for smooth changes */
-    margin: 30px;
+    margin: 10px;
 }
 .btnlight:hover {
     /*font-size: 1.5em; /* Increase font size on hover */
