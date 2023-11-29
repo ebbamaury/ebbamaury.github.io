@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btnlight fade-in" onclick="showSections('fr')">Français</a>
-                    <a class="btnlight fade-in" onclick="showSections('en')">English v4.10</a>
+                    <a class="btnlight fade-in" onclick="showSections('en')">English v4.11</a>
                     <a class="btnlight fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -459,10 +459,9 @@
         invitationSection = document.getElementById('invitation')
         invitationSection.style.display = 'block';        
 
-        var invitationsSection = document.getElementById('invitations');
-            if (invitationsSection) {
-                invitationsSection.scrollIntoView({ behavior: 'smooth', block: 'start', duration: 2500 });
-            }
+        if (invitationSection) {
+            invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start', duration: 2500 });
+        }
         
         /*setTimeout(() => {
             invitationSection.style.opacity = 1;
