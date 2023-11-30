@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.63</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.64</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -236,10 +236,15 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group"  id="form-input-invite-code">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
+                            <div class="form-input-group" id="form-input-brunch-answer">
+                                <i class="fa fa-key"></i>
+                                <select name="brunch_answer" id="brunch_answer" class="" required>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know yet">Don't know yet</option>
+                                </select>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
@@ -285,7 +290,7 @@
             <div class="col-md-6 d-flex align-items-center" style="padding: 5px; margin-bottom: 30px;">
                 <a class="btn btn-accent btn-small"
                    href="https://bastidedeganay.com" target="_blank"><i
-                        class="fa-regular fa-compas"></i>&nbsp;&nbsp;<span id="accomodation-visit-webpage-btn-1">Visit webpage</span></a>
+                        class="fa fa-compas"></i>&nbsp;&nbsp;<span id="accomodation-visit-webpage-btn-1">Visit webpage</span></a>
             </div>
         </div>
     </div>
