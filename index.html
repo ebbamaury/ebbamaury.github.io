@@ -78,9 +78,9 @@
 
 <body id="top" style="background-color: #fef8f0;">
 
-    <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.png') center center no-repeat; background-size: cover; min-height: 675px">
+    <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.png') center center no-repeat; background-size: cover; min-height: 650px">
         <div class="row" >
-            <div class="col-md-12 text-center" style="margin-top: 175px;">
+            <div class="col-md-12 text-center" style="margin-top: 200px;">
                 <h2 id="page-title" ></h2>
                 <hr id="subtitle-line" class="hidden" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
                 <h6 id="page-subtitle"  style="margin-top: 25px;"></h6>
@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.74</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.68</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -239,7 +239,17 @@
                             <div class="form-input-group"  id="form-input-invite-code">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
                             </div>
-                        </div>                                            
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" id="form-input-brunch-answer">
+                                <i class="fa fa-key"></i>
+                                <select name="brunch_answer" id="brunch_answer" class="" required>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know yet">Don't know yet</option>
+                                </select>
+                            </div>
+                        </div>                                                
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
@@ -253,7 +263,7 @@
     </div>
 </section>
 
-<!--
+
 <section id="accomodations" class="section-lesspadding" style="display: none; margin-top: 40px ">
     <div class="text-center" >
         <h3 id="accomodations-title">Where to stay?</h3>
@@ -261,7 +271,7 @@
     </div>
     <div class="row" style="margin-left: 10vw; margin-right: 10vw; margin-bottom: 20px;">
         <div class="col-md-6 text-center" style="margin-bottom: -30px;">
-            <h5><a href="https://www.garden-city.fr/fr/puyricard.html" target="_blank" style="text-decoration: underline; color: #644f44">Appart'Hotel Garden & City</a></h5>
+            <h5><a href="https://www.garden-city.fr/fr/puyricard.html" target="_blank" style="text-decoration: underline;">Appart'Hotel Garden & City</a></h5>
             <p style="margin-bottom: -18px;">380 Chemin de la Quille, 13540 Puyricard, France</p>
             <p style="margin-bottom: -18px;">Apt. less than 1km from Château d'Alphéran</p>
             <p> € </p>
@@ -269,31 +279,51 @@
     </div>
     <div class="row"  style="margin-left: 10vw; margin-right: 10vw; margin-bottom: 20px;">
         <div class="col-md-6 text-center" style="margin-bottom: -30px;">
-            <h5><a href="https://bastidedeganay.com" target="_blank" style="text-decoration: underline; color: #644f44">La Bastide de Ganay</a></h5>
+            <h5>La Bastide de Ganay</h5>
             <p style="margin-bottom: -18px;">5635 route du Puy Sainte Reparade,13540 Puyricard, France</p>
             <p style="margin-bottom: -18px;">B&B at 3km from Château d'Alphéran</p>
             <p> €€</p>
         </div>
+        <div class="row text-center">
+            <div class="col-md-6 d-flex align-items-center" style="padding: 5px; margin-bottom: 30px;">
+                <a class="btn btn-accent btn-small"
+                   href="https://bastidedeganay.com" target="_blank"><i
+                        class="fa-regular fa-compas"></i>&nbsp;&nbsp;<span id="accomodation-visit-webpage-btn-1">Visit webpage</span></a>
+            </div>
+        </div>
     </div>
     <div class="row"  style="margin-left: 10vw; margin-right: 10vw; margin-bottom: 20px;">
         <div class="col-md-6 text-center" style="margin-bottom: -30px;"> 
-            <h5><a href="http://www.lessources.fr/" target="_blank" style="text-decoration: underline; color: #644f44">Les Petites Sources</a></h5>
+            <h5>Les Petites Sources</h5>
             <p style="margin-bottom: -18px;">17 Boulevard de Carelle ,13540 Puyricard, France</p>
             <p style="margin-bottom: -18px;">B&B less than 1km from Château d’Alphéran</p>
             <p > €€</p>
         </div>
+        <div class="row text-center">
+            <div class="col-md-6 d-flex align-items-center" style="padding: 5px; margin-bottom: 30px;">
+                <a class="btn btn-accent btn-small"
+                   href="http://www.lessources.fr/" target="_blank"><i
+                        class="fa-regular fa-compas"></i>&nbsp;&nbsp;<span id="accomodation-visit-webpage-btn-1">Visit webpage</span></a>
+            </div>
+        </div>
     </div>
     <div class="row"  style="margin-left: 10vw; margin-right: 10vw; margin-bottom: 20px;">
         <div class="col-md-6 text-center" style="margin-bottom: -30px;">
-            <h5><a href="https://chateaudelagaude.com/en" target="_blank" style="text-decoration: underline; color: #644f44">Château de La Gaude</a></h5>
             <h5>Château de La Gaude  </h5>
             <p style="margin-bottom: -18px;">3959 Rte des Pinchinats, 13100 Aix-en-Provence, France</p>
             <p style="margin-bottom: -18px;">Hotel at 8km from Château d’Alphéran</p>
             <p>€€€€€</p>
         </div>
+        <div class="row text-center">
+            <div class="col-md-6 d-flex align-items-center" style="padding: 5px; margin-bottom: 30px;">
+                <a class="btn btn-accent btn-small"
+                   href="https://chateaudelagaude.com/en" target="_blank"><i
+                        class="fa-regular fa-compas"></i>&nbsp;&nbsp;<span id="accomodation-visit-webpage-btn-1">Visit webpage</span></a>
+            </div>
+        </div>
     </div>
 </section>
--->
+
 
 
 
@@ -578,8 +608,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('events').style.display = 'block';
         document.getElementById('map').style.display = 'block';
         document.getElementById('rsvp').style.display = 'block';
-        /*
-        document.getElementById('accomodations').style.display = 'block';*/
+        document.getElementById('accomodations').style.display = 'block';
 
         invitationSection = document.getElementById('invitation')
         invitationSection.style.display = 'block';        
