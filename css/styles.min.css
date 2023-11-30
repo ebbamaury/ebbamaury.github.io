@@ -11,6 +11,9 @@
         opacity: 1;
     }
 }
+.hidden {
+    opacity: 0;
+}
 .fade-in {
     animation: fadeIn 3125ms ease-out; /* Adjust the duration and easing as needed */
     animation-fill-mode: forwards; /* Keeps the last frame of the animation */
