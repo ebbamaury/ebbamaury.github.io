@@ -78,11 +78,11 @@
 
 <body id="top" style="background-color: #fef8f0;">
 
-    <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.png') center center no-repeat; background-size: cover;">
+    <section id="welcome" class="section-padding" style="text-align: center;">
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 200px;">
                 <h2 id="page-title" class="fade-in"></h2>
-                <hr id="subtitle-line" class="fade-in" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
+                <hr id="subtitle-line" class="" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
                 <h6 id="page-subtitle" class="fade-in" style="margin-top: 25px;"></h6>
                 <h1 id="location-title" class="fade-in"></h1>
             </div>
@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.47</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.50</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -399,6 +399,12 @@ document.addEventListener("DOMContentLoaded", function() {
         .type("y")
         .go();
         setTimeout(() => {     
+
+            var subtitle_line = document.getElementById(subtitle-line);
+            if (button) {
+                subtitle_line.classList.add('fade-in')
+            }
+            
             new TypeIt("#page-subtitle", { 
             lifeLike: false, 
             cursorChar: "",
@@ -480,8 +486,15 @@ document.addEventListener("DOMContentLoaded", function() {
                             button.classList.add('fade-in')
                         }
                     });
+                    
+                    var welcomeSection = document.getElementById('welcome');
+                    if (welcomeSection) {
+                        welcomeSection.style.background = "background: url('img/background.png') center center no-repeat; background-size: cover; opacity: 0; transition: opacity 3s ease-in-out;";
+                        welcomeSection.style.backgroundSize = 'cover';
+                    }
+                    
 
-                }, 4000);
+                }, 5000);
 
 
 
