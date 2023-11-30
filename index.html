@@ -83,15 +83,15 @@
             <div class="col-md-12 text-center" style="margin-top: 200px;">
                 <h2 id="page-title" class="fade-in"></h2>
                 <hr id="subtitle-line" class="fade-in" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
-                <h6 id="page-subtitle" class="fade-in" style="margin-top: 25px;">31.08.2024</h6>
-                <h1 id="location-title" class="fade-in">Château d 'Alphéran</h1>
+                <h6 id="page-subtitle" class="fade-in" style="margin-top: 25px;"></h6>
+                <h1 id="location-title" class="fade-in"></h1>
             </div>
         </div>
         <div class="container" style="margin-bottom:40px">
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('fr')">Français</a>
-                    <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('en')">English v4.41</a>
+                    <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('en')">English v4.42</a>
                     <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .pause(64)
         .type("y")
         .go();
-        });
+        
     new TypeIt("#page-subtitle", { 
     lifeLike: false, 
     cursorChar: "",
@@ -425,6 +425,51 @@ document.addEventListener("DOMContentLoaded", function() {
 	.pause(405)
 	.type("4")
 	.go();
+
+    new TypeIt("#location-title", { 
+    lifeLike: false, 
+    cursorChar: "",
+    speed: 0 
+})
+	.type("C")
+	.pause(196)
+	.type("h")
+	.pause(80)
+	.type("â")
+	.pause(120)
+	.type("t")
+	.pause(116)
+	.type("e")
+	.pause(104)
+	.type("a")
+	.pause(162)
+	.type("u")
+	.pause(103)
+	.type(" ")
+	.pause(261)
+	.type("d")
+    .pause(103)
+	.type(" ")
+	.pause(335)
+	.type("'")
+	.pause(423)
+	.type("A")
+	.pause(300)
+	.type("l")
+	.pause(206)
+	.type("p")
+	.pause(281)
+	.type("h")
+	.pause(184)
+	.type("é")
+	.pause(45)
+	.type("r")
+	.pause(184)
+	.type("a")
+	.pause(100)
+	.type("n")
+	.go();
+});
 </script>
 
 
