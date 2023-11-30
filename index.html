@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('fr')">Français</a>
-                    <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('en')">English v4.42</a>
+                    <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('en')">English v4.43</a>
                     <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -398,77 +398,81 @@ document.addEventListener("DOMContentLoaded", function() {
         .pause(64)
         .type("y")
         .go();
-        
-    new TypeIt("#page-subtitle", { 
-    lifeLike: false, 
-    cursorChar: "",
-    speed: 0 
-})
-	.delete(9, {instant: true})
-    .type("3")
-	.pause(192)
-	.type("1")
-	.pause(323)
-	.type(".")
-	.pause(513)
-	.type("0")
-	.pause(634)
-	.type("8")
-	.pause(387)
-	.type(".")
-	.pause(217)
-	.type("2")
-	.pause(158)
-	.type("0")
-	.pause(68)
-	.type("2")
-	.pause(405)
-	.type("4")
-	.go();
+        setTimeout(() => {     
+            new TypeIt("#page-subtitle", { 
+            lifeLike: false, 
+            cursorChar: "",
+            speed: 0 
+        })
+            .delete(9, {instant: true})
+            .type("3")
+            .pause(192)
+            .type("1")
+            .pause(323)
+            .type(".")
+            .pause(513)
+            .type("0")
+            .pause(634)
+            .type("8")
+            .pause(387)
+            .type(".")
+            .pause(217)
+            .type("2")
+            .pause(158)
+            .type("0")
+            .pause(68)
+            .type("2")
+            .pause(405)
+            .type("4")
+            .go();
 
-    new TypeIt("#location-title", { 
-    lifeLike: false, 
-    cursorChar: "",
-    speed: 0 
-})
-	.type("C")
-	.pause(196)
-	.type("h")
-	.pause(80)
-	.type("â")
-	.pause(120)
-	.type("t")
-	.pause(116)
-	.type("e")
-	.pause(104)
-	.type("a")
-	.pause(162)
-	.type("u")
-	.pause(103)
-	.type(" ")
-	.pause(261)
-	.type("d")
-    .pause(103)
-	.type(" ")
-	.pause(335)
-	.type("'")
-	.pause(423)
-	.type("A")
-	.pause(300)
-	.type("l")
-	.pause(206)
-	.type("p")
-	.pause(281)
-	.type("h")
-	.pause(184)
-	.type("é")
-	.pause(45)
-	.type("r")
-	.pause(184)
-	.type("a")
-	.pause(100)
-	.type("n")
-	.go();
+            setTimeout(() => {
+                new TypeIt("#location-title", { 
+                lifeLike: false, 
+                cursorChar: "",
+                speed: 0 
+            })
+                .type("C")
+                .pause(196)
+                .type("h")
+                .pause(80)
+                .type("â")
+                .pause(120)
+                .type("t")
+                .pause(116)
+                .type("e")
+                .pause(104)
+                .type("a")
+                .pause(162)
+                .type("u")
+                .pause(103)
+                .type(" ")
+                .pause(261)
+                .type("d")
+                .pause(103)
+                .type(" ")
+                .pause(335)
+                .type("'")
+                .pause(423)
+                .type("A")
+                .pause(300)
+                .type("l")
+                .pause(206)
+                .type("p")
+                .pause(281)
+                .type("h")
+                .pause(184)
+                .type("é")
+                .pause(45)
+                .type("r")
+                .pause(184)
+                .type("a")
+                .pause(100)
+                .type("n")
+                .go();
+            }, 2000);
+
+        }, 3000);
 });
 </script>
 
