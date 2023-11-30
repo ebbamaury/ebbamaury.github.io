@@ -78,7 +78,7 @@
 
 <body id="top" style="background-color: #fef8f0;">
 
-    <section id="welcome" class="section-padding" style="text-align: center;">
+    <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.png') center center no-repeat; background-size: cover;">
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 200px;">
                 <h2 id="page-title" class="fade-in"></h2>
@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.51</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.52</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -396,7 +396,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .pause(137)
         .type("r")
         .pause(64)
-        .type("y v4.51")
+        .type("y")
         .go();
         setTimeout(() => {     
 
@@ -486,12 +486,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             button.classList.add('fade-in')
                         }
                     });
-                    
+                    /*
                     var welcomeSection = document.getElementById('welcome');
                     if (welcomeSection) {
                         welcomeSection.style.background = "background: url('img/background.png') center center no-repeat; background-size: cover; opacity: 0; transition: opacity 3s ease-in-out;";
                         welcomeSection.style.backgroundSize = 'cover';
                     }
+                    */
                     
 
                 }, 5000);
