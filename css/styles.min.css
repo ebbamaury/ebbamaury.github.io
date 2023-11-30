@@ -144,6 +144,9 @@ h5{
 .btn-margin-right{
     margin:12px
 }
+.btn-margin{
+    margin:10px
+}
 section.intro,section.features-extra{
     background:#fef1f2
 }
