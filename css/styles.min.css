@@ -131,7 +131,7 @@ h5{
 }
 .btn-fill:hover,.btn-fill:focus{
     color:#ffffff;
-    background-color:#f97782;
+    background-color:#44050a;
     border-color:#fa9099
 }
 .btn-small{
@@ -912,6 +912,14 @@ header .member-actions{
 }
 .rsvp-form input::placeholder {
     color: #644f44; /* Dark gray color */
+}
+.form-input-group{
+    min-width: 400px; /* Set the minimum width for form-input-group */
+    width:100%;
+    margin: 0 auto;
+}
+.container-fluid {
+    text-align: center; /* Center the content horizontally */
 }
 footer .content{
     border-top:1px solid #fa9099;
