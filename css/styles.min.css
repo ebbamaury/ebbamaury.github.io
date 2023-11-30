@@ -869,7 +869,8 @@ header .member-actions{
 }
 .rsvp .rsvp-form .form-input-group i{
     color:#fa9099;
-    font-size:16px
+    font-size:16px;
+    min-width: 500px;
 }
 .rsvp .rsvp-form .form-input-group i:after{
     content:"";
@@ -881,6 +882,7 @@ header .member-actions{
     left:30px;
     transform:translateY(-50%)
 }
+
 .rsvp .rsvp-form .form-input-group i.fa-user,.rsvp .rsvp-form .form-input-group i.fa-users,.rsvp .rsvp-form .form-input-group i.fa-envelope,.rsvp .rsvp-form .form-input-group .fa-key{
     font-size:16px;
     position:absolute;
@@ -913,11 +915,7 @@ header .member-actions{
 .rsvp-form input::placeholder {
     color: #644f44; /* Dark gray color */
 }
-.form-input-group{
-    min-width: 400px; /* Set the minimum width for form-input-group */
-    width:100%;
-    margin: 0 auto;
-}
+
 .container-fluid {
     text-align: center; /* Center the content horizontally */
 }
