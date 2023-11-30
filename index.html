@@ -91,13 +91,8 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.8</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.9</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
-                    <!--
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('en')">English 1.8</a>
-                    <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('sv')">Svenska</a>
-                    -->
                 </div>
             </div>
         </div>
@@ -211,31 +206,31 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8 col-md-offset-2">
                 <h3 id="rsvp-confirm-attendance">Confirm your attendance</h3>
                 <p id="rsvp-attendance-message">We would greatly appreciate if you could RSVP before 1st of March 2024</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-plus-ones">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
                             </div>
                         </div>
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-email">
                                 <i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-name">
                                 <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
                             </div>
                         </div>
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-input-group"  id="form-input-invite-code">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
                             </div>
