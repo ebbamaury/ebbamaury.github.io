@@ -62,6 +62,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
     <style>
         .responsive-image {
@@ -80,7 +81,7 @@
     <section id="welcome" class="section-padding" style="text-align: center; background: url('img/background.png') center center no-repeat; background-size: cover;">
         <div class="row">
             <div class="col-md-12 text-center" style="margin-top: 200px;">
-                <h2 id="page-title" class="fade-in">Ebba + Amaury</h2>
+                <h2 id="page-title" class="fade-in"></h2>
                 <hr id="subtitle-line" class="fade-in" style="margin-top: 40px; border-color: #644f44; width: 100px; border-width: 1px;">
                 <h6 id="page-subtitle" class="fade-in" style="margin-top: 25px;">31.08.2024</h6>
                 <h1 id="location-title" class="fade-in">Château d 'Alphéran</h1>
@@ -90,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('fr')">Français</a>
-                    <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('en')">English v4.36</a>
+                    <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('en')">English v4.37</a>
                     <a class="btn btn-accent btn-margin btn-small fade-in" onclick="showSections('sv')">Svenska</a>
                     <!--
                     <a class="btn btn-accent btn-large rsvp-btn" onclick="showSections('fr')">Français</a>
@@ -360,6 +361,41 @@
 
     // Display the number of days remaining
     document.getElementById("days-remaining").innerHTML = "Days remaining until the wedding: " + daysRemaining;
+</script>
+
+<script>
+
+new TypeIt("#page-title", { 
+    lifeLike: false, 
+    speed: 0 
+})
+	.delete(42, {instant: true})
+	.type("E")
+	.pause(360)
+	.type("b")
+	.pause(170)
+	.type("b")
+	.pause(112)
+	.type("a")
+	.pause(104)
+	.type(" ")
+	.pause(452)
+	.type("+")
+	.pause(127)
+	.type(" ")
+	.pause(693)
+	.type("A")
+	.pause(246)
+	.type("m")
+	.pause(103)
+	.type("a")
+	.pause(120)
+	.type("u")
+	.pause(137)
+	.type("r")
+	.pause(64)
+	.type("y")
+	.pause(112)
 </script>
 
 
