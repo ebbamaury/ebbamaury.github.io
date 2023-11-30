@@ -878,12 +878,12 @@ header .member-actions{
     border:solid 1px #fff;
     text-align:left;
     position:relative;
-    /*min-width: 450px;*/
+    /* something just so asdfI can save*/
 }
 .rsvp .rsvp-form .form-input-group i{
     color:#fa9099;
     font-size:16px;
-    min-width: 500px;
+
 }
 .rsvp .rsvp-form .form-input-group i:after{
     content:"";
