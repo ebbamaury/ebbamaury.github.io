@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.17</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.18</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -232,13 +232,7 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-brunch">
-                                <label for="brunch"><i class="fa fa-question"></i> Brunch:</label>
-                                <select name="brunch" id="brunch" class="" required>
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                    <option value="dont_know">Don't know yet</option>
-                                </select>
+                                <i class="fa fa-user"></i><input name="brunch" class="" placeholder="Yes/No" required>
                             </div>
                         </div>
                         <!--
@@ -565,6 +559,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Votre adresse email" required>';
             document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Tous les nom(s) et prénom(s)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Combien de personne(s) à confirmer ?" required>';
+            document.getElementById("form-input-brunch").innerHTML = '<i class="fa fa-user"></i><input name="brunch" class="" placeholder="Oui/Non" required>';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Où loger ?";
             document.getElementById('accomodations-header').textContent = "Quelques suggestions";
@@ -605,6 +600,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>';
             document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="All name(s)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>';
+            document.getElementById("form-input-brunch").innerHTML = '<i class="fa fa-user"></i><input name="brunch" class="" placeholder="Yes/No" required>';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Where to stay?";
             document.getElementById('accomodations-header').textContent = "Some suggestions";
@@ -644,6 +640,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Din mail" required>';
             document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Alla namn" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer bekräftar du?" required>';
+            document.getElementById("form-input-brunch").innerHTML = '<i class="fa fa-user"></i><input name="brunch" class="" placeholder="Ja/Nej" required>';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';*/
             document.getElementById('accomodations-title').textContent = "Var kan man bo?";
             document.getElementById('accomodations-header').textContent = "Några förslag";
