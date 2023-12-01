@@ -33,8 +33,8 @@
             const link = document.createElement('link');
             if (css === 'animate.css') {
                 link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
-            } else if (css === 'font-awesome.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            /*} else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';*/
             }
             link.rel = 'stylesheet';
 
@@ -59,10 +59,11 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">-->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://kit.fontawesome.com/ef2dd08a97.js" crossorigin="anonymous"></script>
 
     <style>
         .responsive-image {
@@ -91,7 +92,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.26</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.27</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -191,7 +192,7 @@
     <div class="row section-padding">
         <div class="col-md-4 col-md-offset-4 text-center">
             <a class="btn btn-accent btn-small" href="https://maps.app.goo.gl/eURWnnyDAYzvCVaMA" target="_blank">
-                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;<span id="map-btn-text">Show map</span>
+                <i class="fa-solid fa-map-marker"></i>&nbsp;&nbsp;<span id="map-btn-text">Show map</span>
             </a>
         </div>
     </div>
@@ -227,30 +228,30 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-plus-ones">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
+                                <i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-email">
-                                <i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
+                                <i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-name">
-                                <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
+                                <i class="fa-solid fa-user"></i><input name="name" class="" placeholder="Your name" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group" id="form-input-brunch">
-                                <i class="fa fa-lemon"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)" required>
+                                <i class="fa-solid fa-lemon"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)" required>
                             </div>
                         </div>
                         <!--
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group"  id="form-input-invite-code">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
+                                <i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
                             </div>
                         </div>-->                                                
                     </div>
@@ -570,11 +571,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('rsvp-attendance-message').innerHTML = "Merci de confirmer votre présence avant le 1<sup>er</sup> mars 2024";
             document.getElementById('rsvp-attendance-message-cant').innerHTML = "Si vous ne pouvez pas assister à notre mariage, veuillez nous envoyer un email à <a href='mailto:ebbamaury@gmail.com'>ebbamaury@gmail.com</a>";
             document.getElementById('rsvp-send-confirmation').textContent = "Envoyer la confirmation";
-            document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Votre adresse email" required>';
-            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Tous les nom(s) et prénom(s)" required>';
-            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Combien de personne(s) à confirmer ?" required>';
-            document.getElementById("form-input-brunch").innerHTML = '<i class="fa fa-user"></i><input name="brunch" class="" placeholder="Viendrez-vous au brunch? (Oui/Non)" required>';
-            /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
+            document.getElementById('form-input-email').innerHTML = '<i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Votre adresse email" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa-solid fa-user"></i><input name="name" class="" placeholder="Tous les nom(s) et prénom(s)" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Combien de personne(s) à confirmer ?" required>';
+            document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Viendrez-vous au brunch? (Oui/Non)" required>';
+            /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Où loger ?";
             document.getElementById('accomodations-header').textContent = "Quelques suggestions";
             document.getElementById("accomodations-garden-city-description").textContent = "Appartememts à moins de 1km du Château d'Alphéran";
@@ -613,11 +614,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('rsvp-confirm-attendance').textContent = "Confirm your attendance";
             document.getElementById('rsvp-attendance-message').textContent = "Please confirm your presence before March 1, 2024";
             document.getElementById('rsvp-send-confirmation').textContent = "Send confirmation";
-            document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>';
-            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="All name(s)" required>';
-            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>';
-            document.getElementById("form-input-brunch").innerHTML = '<i class="fa fa-user"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)" required>';
-            /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
+            document.getElementById('form-input-email').innerHTML = '<i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa-solid fa-user"></i><input name="name" class="" placeholder="All name(s)" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>';
+            document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)" required>';
+            /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Where to stay?";
             document.getElementById('accomodations-header').textContent = "Some suggestions";
             document.getElementById("accomodations-garden-city-description").textContent = "Apt. less than 1km from Château d'Alphéran";
@@ -655,11 +656,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('rsvp-confirm-attendance').textContent = "Bekräfta din närvaro";
             document.getElementById('rsvp-attendance-message').textContent = "Vänligen bekräfta din närvaro före 1 mars 2024";
             document.getElementById('rsvp-send-confirmation').textContent = "Skicka bekräftelse";
-            document.getElementById('form-input-email').innerHTML = '<i class="fa fa-envelope" ></i><input type="email" name="email" class="" placeholder="Din mail" required>';
-            document.getElementById('form-input-name').innerHTML = '<i class="fa fa-user"></i><input name="name" class="" placeholder="Alla namn" required>';
-            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer bekräftar du?" required>';
-            document.getElementById("form-input-brunch").innerHTML = '<i class="fa fa-user"></i><input name="brunch" class="" placeholder="Kommer du på brunchen? (Ja/Nej)" required>';
-            /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';*/
+            document.getElementById('form-input-email').innerHTML = '<i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Din mail" required>';
+            document.getElementById('form-input-name').innerHTML = '<i class="fa-solid fa-user"></i><input name="name" class="" placeholder="Alla namn" required>';
+            document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer bekräftar du?" required>';
+            document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Kommer du på brunchen? (Ja/Nej)" required>';
+            /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';*/
             document.getElementById('accomodations-title').textContent = "Var kan man bo?";
             document.getElementById('accomodations-header').textContent = "Några förslag";
             document.getElementById("accomodations-garden-city-description").textContent = "Lägenhet mindre än 1 km från Château d'Alphéran";
