@@ -187,7 +187,7 @@ section.features,section.invitation,section.blog,section.map{
     margin:0
 }
 a{
-    color:#fa9099;
+    color:#f97883;
     -webkit-transition-timing-function:ease;
     transition-timing-function:ease;
     -webkit-transition-duration:200ms;
@@ -196,7 +196,7 @@ a{
     transition-property:color,border-color,background-color
 }
 a:hover,a:focus{
-    color:#fa9099;
+    color:#f97883;
     text-decoration:none
 }
 body{
@@ -887,7 +887,7 @@ header .member-actions{
     /* something just so asdfI can save*/
 }
 .rsvp .rsvp-form .form-input-group i{
-    color:#fa9099;
+    color:#f97883;
     font-size:16px;
 
 }
@@ -895,7 +895,7 @@ header .member-actions{
     content:"";
     height:30px;
     width:1px;
-    border-right:solid 1px #fa9099;
+    border-right:solid 1px #f97883;
     position:absolute;
     top:50%;
     left:30px;
@@ -920,16 +920,16 @@ header .member-actions{
     color: #644f44
 }
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{
-    color:#fa9099
+    color:#f97883
 }
 .rsvp .rsvp-form .form-input-group input:-moz-placeholder{
-    color:#fa9099
+    color:#f97883
 }
 .rsvp .rsvp-form .form-input-group input::-moz-placeholder{
-    color:#fa9099
+    color:#f97883
 }
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder{
-    color:#fa9099
+    color:#f97883
 }
 .rsvp-form input::placeholder {
     color: #644f44; /* Dark gray color */
