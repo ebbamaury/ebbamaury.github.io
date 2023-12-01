@@ -11,6 +11,12 @@
         opacity: 1;
     }
 }
+.fa-user-tie:before {
+    content: "\f508";
+  }
+.fa-lemon:before {
+content: "\f094";
+}
 .hidden {
     opacity: 0;
 }
