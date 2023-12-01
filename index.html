@@ -124,17 +124,17 @@
                 <div class="col-md-12 text-center">
                     <div class="wp3">
                         <p><strong id="day1">31st of August</strong></p>
-                        <h5 id="event1">Wedding ceremony <span class="time"> 5PM</span></h5>
-                        <p></p>
-                    </div>
-                    <div class="wp5">
-                        <h5 id="event2">Dinner <span class="time">7PM - 3AM</span> </h5>
-                        <p></p>
+                        <h5 id="event-ceremony">Wedding ceremony <span class="time"> 5PM</span></h5>
                     </div>
                     <div class="wp4">
+                        <h5 id="event-dinner">Dinner <span class="time">7PM - 10PM</span> </h5>
+                    </div>
+                    <div class="wp5">
+                        <h5 id="event-party">Party <span class="time">10PM - 3AM</span> </h5>
+                    </div>
+                    <div class="wp6">
                         <p><strong id="day2">1st September</strong></p>
-                        <h5 id="event3">Brunch <span class="time">11AM-4PM</span></h5>
-                        <p></p>
+                        <h5 id="event-brunch">Brunch <span class="time">11AM-4PM</span></h5>
                     </div>
                 </div>
             </div>
@@ -554,10 +554,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('dress-code-btn').textContent = "Code vestimentaire";
             document.getElementById('planning-title').textContent = 'Organisation';
             document.getElementById('day1').textContent = '31 août ';
-            document.getElementById('event1').innerHTML = 'Cérémonie de mariage <span class="time"> 17h </span>';
-            document.getElementById('event2').innerHTML = 'Dîner <span class="time"> 20h - 3h</span>';
+            document.getElementById('event-ceremony').innerHTML = 'Cérémonie de mariage <span class="time"> 17h </span>';
+            document.getElementById('event-dinner').innerHTML = 'Dîner <span class="time"> 19h - 22h</span>';
+            document.getElementById('event-party').innerHTML = 'Soirée dansante <span class="time"> 22h - 3h</span>';
             document.getElementById('day2').innerHTML = '1<sup>er</sup> septembre';
-            document.getElementById('event3').innerHTML = 'Brunch <span class="time"> 11h - 16h</span>';
+            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11h - 16h</span>';
             document.getElementById('dress-code-title').textContent = 'Quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-subtitle').textContent = 'Écrire quelque chose sur le code vestimentaire';
             document.getElementById('dress-code-content').innerHTML = '<strong>Quelque chose sur le code vestimentaire.</strong><br> Plus d\'informations sur le code vestimentaire';
@@ -597,10 +598,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('dress-code-btn').textContent = "Dress code";
             document.getElementById('planning-title').textContent = 'Planning';
             document.getElementById('day1').innerHTML = '31<sup>st</sup> August';
-            document.getElementById('event1').innerHTML = 'Wedding ceremony <span class="time"> 5PM</span>';
-            document.getElementById('event2').innerHTML = 'Dinner <span class="time"> 7PM - 3AM</span>';
+            document.getElementById('event-ceremony').innerHTML = 'Wedding ceremony <span class="time"> 5PM</span>';
+            document.getElementById('event-dinner').innerHTML = 'Dinner <span class="time"> 7PM - 22PM</span>';
+            document.getElementById('event-party').innerHTML = 'Party <span class="time"> 22PM - 3AM</span>';
             document.getElementById('day2').innerHTML = '1<sup>st</sup> September';
-            document.getElementById('event3').innerHTML = 'Brunch <span class="time"> 11AM - 4PM</span>';
+            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11AM - 4PM</span>';
             document.getElementById('dress-code-title').textContent = 'Something about the dress code';
             document.getElementById('dress-code-subtitle').textContent = 'Write something about dress code';
             document.getElementById('dress-code-content').innerHTML = '<strong>Something about dress code.</strong><br>Something more about the dress code';
@@ -639,10 +641,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('dress-code-btn').textContent = "Klädkod";
             document.getElementById('planning-title').textContent = 'Planering';
             document.getElementById('day1').textContent = '31 augusti';
-            document.getElementById('event1').innerHTML = 'Bröllopsceremoni <span class="time"> 17.00 </span>';
-            document.getElementById('event2').innerHTML = 'Middag <span class="time"> 20.00 - 3.00</span>';
+            document.getElementById('event-ceremony').innerHTML = 'Bröllopsceremoni <span class="time"> 17.00 </span>';
+            document.getElementById('event-dinner').innerHTML = 'Middag <span class="time"> 19.00 - 22.00</span>';
+            document.getElementById('event-party').innerHTML = 'Fest <span class="time"> 22.00 - 3.00</span>';
             document.getElementById('day2').textContent = '1 september';
-            document.getElementById('event3').innerHTML = 'Brunch <span class="time"> 11.00 - 16.00</span>';
+            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11.00 - 16.00</span>';
             document.getElementById('dress-code-title').textContent = 'Något om klädkoden';
             document.getElementById('dress-code-subtitle').textContent = 'Skriv något om klädkoden';
             document.getElementById('dress-code-content').innerHTML = '<strong>Något om klädkoden.</strong><br>Mer information om klädkoden';
