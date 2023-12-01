@@ -91,7 +91,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.14</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v4.71.15</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -231,10 +231,22 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" id="form-input-brunch">
+                                <label for="brunch"><i class="fa fa-question"></i> Brunch:</label>
+                                <select name="brunch" id="brunch" class="" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="dont_know">Don't know yet</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="col-md-6 col-sm-6">
                             <div class="form-input-group"  id="form-input-invite-code">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
                             </div>
-                        </div>                                                
+                        </div>-->                                                
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
