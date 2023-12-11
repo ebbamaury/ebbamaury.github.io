@@ -24,9 +24,8 @@
     }
 }
 .slideshow-container {
-    max-width: 100%;
+    max-width: 400px;
     position: relative;
-    margin-top: 20px;
 }
 .mySlides {
     display: none;
