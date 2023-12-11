@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.14</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.15</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -744,7 +744,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Kommer du på brunchen? (Ja/Nej)" required>';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';*/
             document.getElementById('accomodations-title').textContent = "Var kan man bo?";
-            document.getElementById('accomodations-header').textContent = "Bor man i Puyricard så är det promenadavstånd till Château d'Alphéran.<br>Väljer man att bo längre bort så tar man sig lättast dit med bil, taxi eller Uber.<br>Nedan följer några förslag på boenden.<br>De flesta kan man börja boka först i mitten av janauri 2024.";
+            document.getElementById('accomodations-header').innerHTML = "Bor man i Puyricard så är det promenadavstånd till Château d'Alphéran.<br>Väljer man att bo längre bort så tar man sig lättast dit med bil, taxi eller Uber.<br>Nedan följer några förslag på boenden.<br>De flesta kan man börja boka först i mitten av janauri 2024.";
             document.getElementById("accomodations-garden-city-description").textContent = "Lägenhetshotell mindre än 1 km från Château d'Alphéran. Med koden XXX får ni 10% rabatt på er vistelse.";
             document.getElementById("accomodations-bastide-description").textContent = "Bed & Breakfast 3 km från Château d'Alphéran";
             document.getElementById("accomodations-source-description").textContent = "Bed & Breakfast mindre än 1 km från Château d’Alphéran";
@@ -804,8 +804,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <script>
-    let slideIndex = 0;
-    showSlides();
 
     function showSlides() {
         let i;
