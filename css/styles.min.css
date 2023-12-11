@@ -11,6 +11,30 @@
         opacity: 1;
     }
 }
+.fade-in-photo {
+    animation: fadeInPhoto 1.5s ease-in-out;
+}
+
+@keyframes fadeInPhoto {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
 .fa-user-tie:before {
     content: "\f508";
   }

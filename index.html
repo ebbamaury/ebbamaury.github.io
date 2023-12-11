@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.0</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.1</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -107,6 +107,17 @@
                 <h3 id="invitation-title" class="fade-in">We are getting married.</h3>
                 <p  id="invitation-content">31<sup>st</sup> of August 2024 at Château d'Alphéran.</p>
                 <!-- <p  id="days-remaining"></p>-->
+            </div>
+            <div class="col-md-12 slideshow-container text-center">
+                <div class="mySlides fade-in-photo">
+                    <img src="img/slideshow/image-1.png" alt="Slide 1">
+                </div>
+                <div class="mySlides fade-in-photo">
+                    <img src="img/slideshow/image-2.png" alt="Slide 2">
+                </div>
+                <div class="mySlides fade-in-photo">
+                    <img src="img/slideshow/image-3.png" alt="Slide 3">
+                </div>
             </div>
         </div>
     </section>
@@ -722,6 +733,25 @@ document.addEventListener("DOMContentLoaded", function() {
     var easeInOutCubic = function(t) {
         return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
     };
+</script>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
 </script>
 
 
