@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.18</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.19</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -209,11 +209,13 @@
                         <h5 id="event-party">Party <span class="time">10PM - 3AM</span> </h5>
                         <p></p>
                     </div>
+                    <!--
                     <div class="wp6">
                         <p><strong id="day2">1st September</strong></p>
                         <h5 id="event-brunch">Brunch <span class="time">11AM-4PM</span></h5>
                         <p></p>
                     </div>
+                    -->
                 </div>
             </div>
             <div class="row section-padding">
@@ -326,8 +328,8 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-brunch">
-                                <i class="fa-solid fa-envelope"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)" required>
+                            <div class="form-input-group" id="form-input-diet">
+                                <i class="fa-solid fa-envelope"></i><input name="diet" class="" placeholder="Do you have any dietary restrictions?">
                             </div>
                         </div>
                         <!--
@@ -639,8 +641,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('event-ceremony').innerHTML = 'Cérémonie de mariage <span class="time"> 17h </span>';
             document.getElementById('event-dinner').innerHTML = 'Dîner <span class="time"> 19h - 22h</span>';
             document.getElementById('event-party').innerHTML = 'Soirée dansante <span class="time"> 22h - 3h</span>';
-            document.getElementById('day2').innerHTML = '1<sup>er</sup> septembre';
-            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11h - 16h</span>';
+            /*document.getElementById('day2').innerHTML = '1<sup>er</sup> septembre';*/
+            /*document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11h - 16h</span>';*/
             document.getElementById('dress-code-title').textContent = 'Élégance sous le soleil Provençal';
             document.getElementById('dress-code').innerHTML = "<strong>Tenue pour Messieurs :</strong><br>Nous vous invitons à nous rejoindre vêtus de tenues formelles. Compte tenu de la chaleur du Sud de la France fin août, n'hésitez pas à choisir des costumes de couleur claire en tissus légers tels que le lin ou le coton.<br><br><strong>Tenue pour Mesdames :</strong><br>Des robes élégantes ou des ensembles formels sont recommandés. Adoptez l'esprit estival avec des tissus légers et fluides pour allier confort et style.";
             document.getElementById("toastmasters-description").innerHTML = "Si vous souhaitez faire un discours au cours de la soirée, veuillez contacter nos toastmasters en envoyant un email à <a href='mailto:toastmaster.ebbamaury@gmail.com'>toastmaster.ebbamaury@gmail.com</a>";
@@ -656,7 +658,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('form-input-email').innerHTML = '<i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Votre adresse email" required>';
             document.getElementById('form-input-name').innerHTML = '<i class="fa-solid fa-user"></i><input name="name" class="" placeholder="Tous les nom(s) et prénom(s)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Combien de personne(s) à confirmer ?" required>';
-            document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Viendrez-vous au brunch? (Oui/Non)" required>';
+            document.getElementById("form-input-diet").innerHTML = '<i class="fa-solid fa-user"></i><input name="diet" class="" placeholder="Avez-vous des restrictions alimentaires?">';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Où loger ?";
             document.getElementById('accomodations-header').textContent = "Quelques suggestions";
@@ -682,8 +684,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('event-ceremony').innerHTML = 'Wedding ceremony <span class="time"> 5PM</span>';
             document.getElementById('event-dinner').innerHTML = 'Dinner <span class="time"> 7PM - 22PM</span>';
             document.getElementById('event-party').innerHTML = 'Party <span class="time"> 22PM - 3AM</span>';
-            document.getElementById('day2').innerHTML = '1<sup>st</sup> September';
-            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11AM - 4PM</span>';
+            /*document.getElementById('day2').innerHTML = '1<sup>st</sup> September';*/
+            /*document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11AM - 4PM</span>';*/
             document.getElementById('dress-code-title').textContent = 'Elegance under the Provencal sun';
             document.getElementById('dress-code').innerHTML = '<strong>Attire for Gentlemen:</strong><br>We request the pleasure of your company in formal suits. Considering the warmth of the South of France in late August, feel free to opt for light-colored suits in breathable fabrics like linen or cotton.<br><br><strong>Attire for Ladies:</strong><br>Elegant dresses or formal separates are recommended. Embrace the summer vibes with light, flowing fabrics to ensure comfort and style.';
             document.getElementById("toastmasters-description").innerHTML = "If you wish to make a speech during the evening, please contact our toastmasters by sending an email at <a href='mailto:toastmaster.ebbamaury@gmail.com'>toastmaster.ebbamaury@gmail.com</a>";
@@ -699,7 +701,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('form-input-email').innerHTML = '<i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>';
             document.getElementById('form-input-name').innerHTML = '<i class="fa-solid fa-user"></i><input name="name" class="" placeholder="All name(s)" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>';
-            document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)" required>';
+            document.getElementById("form-input-diet").innerHTML = '<i class="fa-solid fa-user"></i><input name="diet" class="" placeholder="Do you have dietary restrictions?">';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Where to stay?";
             document.getElementById('accomodations-header').textContent = "Some suggestions";
@@ -724,8 +726,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('event-ceremony').innerHTML = 'Bröllopsceremoni <span class="time"> 17.00 </span>';
             document.getElementById('event-dinner').innerHTML = 'Middag <span class="time"> 19.00 - 22.00</span>';
             document.getElementById('event-party').innerHTML = 'Fest <span class="time"> 22.00 - 3.00</span>';
-            document.getElementById('day2').textContent = '1 september';
-            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11.00 - 16.00</span>';
+            /*document.getElementById('day2').textContent = '1 september';*/
+            /*document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11.00 - 16.00</span>';*/
             document.getElementById('dress-code-title').textContent = 'Elegans under den provensalska solen';
             document.getElementById('dress-code').innerHTML = '<strong>Mörk kostym</strong><br>Med tanke på värmen i södra Frankrike i slutet av augusti, så får ni gärna bära ljusa kostymer också.';
             document.getElementById("toastmasters-description").innerHTML = "Om du vill hålla ett tal under kvällen, kontakta våra toastmasters genom att skicka ett mail till <a href='mailto:toastmaster.ebbamaury@gmail.com'>toastmaster.ebbamaury@gmail.com</a>";
@@ -741,7 +743,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('form-input-email').innerHTML = '<i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Din mail" required>';
             document.getElementById('form-input-name').innerHTML = '<i class="fa-solid fa-user"></i><input name="name" class="" placeholder="Alla namn" required>';
             document.getElementById('form-input-plus-ones').innerHTML = '<i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="Hur många personer bekräftar du?" required>';
-            document.getElementById("form-input-brunch").innerHTML = '<i class="fa-solid fa-user"></i><input name="brunch" class="" placeholder="Kommer du på brunchen? (Ja/Nej)" required>';
+            document.getElementById("form-input-diet").innerHTML = '<i class="fa-solid fa-user"></i><input name="diet" class="" placeholder="Ange eventuella allergier här">';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Koden" required>';*/
             document.getElementById('accomodations-title').textContent = "Var kan man bo?";
             document.getElementById('accomodations-header').innerHTML = "Bor man i Puyricard så är det promenadavstånd till Château d'Alphéran.<br>Väljer man att bo längre bort så tar man sig lättast dit med bil, taxi eller Uber.<br>Nedan följer några förslag på boenden.<br>De flesta kan man börja boka först i mitten av janauri 2024.";
