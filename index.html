@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.20</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.21</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                 <p  id="invitation-content">31<sup>st</sup> of August 2024 at Château d'Alphéran.</p>
                 <!-- <p  id="days-remaining"></p>-->
             </div>
-            <div class="col-md-6 col-md-offset-3 text-center slideshow-container">
+            <div class="col-md-12 text-center slideshow-container">
                 <div class="mySlides fade-in-photo">
                     <img src="img/slideshow/image-3.png" alt="Slide 1" class="mx-auto">
                 </div>
@@ -661,7 +661,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("form-input-diet").innerHTML = '<i class="fa-solid fa-user"></i><input name="diet" class="" placeholder="Avez-vous des restrictions alimentaires?">';
             /*document.getElementById('form-input-invite-code').innerHTML = '<i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Code" required>';*/
             document.getElementById('accomodations-title').textContent = "Où loger ?";
-            document.getElementById('accomodations-header').textContent = "Quelques suggestions";
+            document.getElementById('accomodations-header').innerHTML = "Quelques suggestions";
             document.getElementById("accomodations-garden-city-description").textContent = "Appartememts à moins de 1km du Château d'Alphéran";
             document.getElementById("accomodations-bastide-description").textContent = "Chambres d'hôtes à 3km du Château d'Alphéran";
             document.getElementById("accomodations-source-description").textContent = "Chambres d'hôtes à moins de 1km du Château d'Alphéran";
