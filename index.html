@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.0</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -494,6 +494,130 @@
 </script>
 
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    new TypeIt("#page-title", { 
+        lifeLike: false,
+        waitUntilVisible: true, 
+        cursorChar: "",
+        speed: 0 
+    })
+    .type("E")
+    .pause(260)
+    .type("b")
+    .pause(120)
+    .type("b")
+    .pause(82)
+    .type("a")
+    .pause(84)
+    .type(" ")
+    .pause(252)
+    .type("+")
+    .pause(87)
+    .type(" ")
+    .pause(293)
+    .type("A")
+    .pause(146)
+    .type("m")
+    .pause(103)
+    .type("a")
+    .pause(120)
+    .type("u")
+    .pause(137)
+    .type("r")
+    .pause(64)
+    .type("y")
+    .go();  // Add go() to start typing immediately
+
+    var subtitle_line = document.getElementById("subtitle-line");
+    if (subtitle_line) {
+        subtitle_line.classList.add('fade-in');
+    }
+
+    new TypeIt("#page-subtitle", { 
+        lifeLike: false, 
+        cursorChar: "",
+        speed: 0 
+    })
+    .type("3")
+    .pause(192)
+    .type("1")
+    .pause(123)
+    .type(".")
+    .pause(213)
+    .type("0")
+    .pause(134)
+    .type("8")
+    .pause(187)
+    .type(".")
+    .pause(117)
+    .type("2")
+    .pause(158)
+    .type("0")
+    .pause(68)
+    .type("2")
+    .pause(105)
+    .type("4")
+    .go();  // Add go() to start typing immediately
+
+    new TypeIt("#location-title", { 
+        lifeLike: false, 
+        cursorChar: "",
+        speed: 0 
+    })
+    .type("C")
+    .pause(196)
+    .type("h")
+    .pause(80)
+    .type("â")
+    .pause(120)
+    .type("t")
+    .pause(116)
+    .type("e")
+    .pause(104)
+    .type("a")
+    .pause(162)
+    .type("u")
+    .pause(103)
+    .type(" ")
+    .pause(161)
+    .type("d")
+    .pause(103)
+    .type(" ")
+    .pause(135)
+    .type("'")
+    .pause(123)
+    .type("A")
+    .pause(100)
+    .type("l")
+    .pause(106)
+    .type("p")
+    .pause(181)
+    .type("h")
+    .pause(184)
+    .type("é")
+    .pause(45)
+    .type("r")
+    .pause(144)
+    .type("a")
+    .pause(100)
+    .type("n")
+    .go();  // Add go() to start typing immediately
+    setTimeout(() => {
+    var buttonIds = ['button_language_fr', 'button_language_en', 'button_language_sv'];
+
+    buttonIds.forEach(function (id) {
+        var button = document.getElementById(id);
+        if (button) {
+            button.classList.add('fade-in');
+        }
+    });
+    }, 5000);   
+});
+
+</script>
+
+<!--
+<script>
 document.addEventListener("DOMContentLoaded", function() {
         new TypeIt("#page-title", { 
         lifeLike: false,
@@ -635,6 +759,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
 });
 </script>
+-->
 
 
 <script>
