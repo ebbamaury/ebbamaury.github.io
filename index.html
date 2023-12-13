@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
                     <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.0</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v1.1</a>
                     <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
@@ -142,13 +142,13 @@
                     <img src="img/slideshow_min/image-7.png" alt="Slide 7"  >
                 </div>
                 <div class="mySlides fade-in-photo">
-                    <img src="img/slideshow_min/image-8.png" alt="Slide 8"  >
+                    <img src="img/slideshow_min/image-8.png" alt="Slide 10"  >
                 </div>
                 <div class="mySlides fade-in-photo">
                     <img src="img/slideshow_min/image-9.png" alt="Slide 9"  >
                 </div>
                 <div class="mySlides fade-in-photo">
-                    <img src="img/slideshow_min/image-10.png" alt="Slide 10"  >
+                    <img src="img/slideshow_min/image-10.png" alt="Slide 8"  >
                 </div>
                 <div class="mySlides fade-in-photo">
                     <img src="img/slideshow_min/image-11.png" alt="Slide 11"  >
@@ -466,7 +466,7 @@
 <script src="js/scripts.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-<!-- Google Analytics -->
+<!-- Google Analytics
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -482,7 +482,7 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
-
+ -->
 <script>
     // Calculate the number of days remaining
     var weddingDate = new Date("Aug 31, 2024").getTime();
@@ -499,7 +499,92 @@
         lifeLike: false,
         waitUntilVisible: true, 
         cursorChar: "",
-        speed: 0 
+        speed: 0,
+        afterComplete: function(instance){
+            
+            new TypeIt("#page-subtitle", { 
+                lifeLike: false, 
+                cursorChar: "",
+                speed: 0,
+                afterComplete: function(instance){
+
+                    new TypeIt("#location-title", { 
+                        lifeLike: false, 
+                        cursorChar: "",
+                        speed: 0,
+                        afterComplete: function(instance){
+                            var buttonIds = ['button_language_fr', 'button_language_en', 'button_language_sv'];
+
+                            buttonIds.forEach(function (id) {
+                                var button = document.getElementById(id);
+                                if (button) {
+                                    button.classList.add('fade-in');
+                                }
+                            });
+                        }
+                    })
+                    .type("C")
+                    .pause(196)
+                    .type("h")
+                    .pause(80)
+                    .type("â")
+                    .pause(120)
+                    .type("t")
+                    .pause(116)
+                    .type("e")
+                    .pause(104)
+                    .type("a")
+                    .pause(162)
+                    .type("u")
+                    .pause(103)
+                    .type(" ")
+                    .pause(161)
+                    .type("d")
+                    .pause(103)
+                    .type(" ")
+                    .pause(135)
+                    .type("'")
+                    .pause(123)
+                    .type("A")
+                    .pause(100)
+                    .type("l")
+                    .pause(106)
+                    .type("p")
+                    .pause(181)
+                    .type("h")
+                    .pause(184)
+                    .type("é")
+                    .pause(45)
+                    .type("r")
+                    .pause(144)
+                    .type("a")
+                    .pause(100)
+                    .type("n")
+                    .go();  
+
+                } 
+            })
+            .type("3")
+            .pause(192)
+            .type("1")
+            .pause(123)
+            .type(".")
+            .pause(213)
+            .type("0")
+            .pause(134)
+            .type("8")
+            .pause(187)
+            .type(".")
+            .pause(117)
+            .type("2")
+            .pause(158)
+            .type("0")
+            .pause(68)
+            .type("2")
+            .pause(105)
+            .type("4")
+            .go();  
+        }
     })
     .type("E")
     .pause(260)
@@ -526,92 +611,8 @@
     .type("r")
     .pause(64)
     .type("y")
-    .go();  // Add go() to start typing immediately
+    .go();  
 
-    var subtitle_line = document.getElementById("subtitle-line");
-    if (subtitle_line) {
-        subtitle_line.classList.add('fade-in');
-    }
-
-    new TypeIt("#page-subtitle", { 
-        lifeLike: false, 
-        cursorChar: "",
-        speed: 0 
-    })
-    .type("3")
-    .pause(192)
-    .type("1")
-    .pause(123)
-    .type(".")
-    .pause(213)
-    .type("0")
-    .pause(134)
-    .type("8")
-    .pause(187)
-    .type(".")
-    .pause(117)
-    .type("2")
-    .pause(158)
-    .type("0")
-    .pause(68)
-    .type("2")
-    .pause(105)
-    .type("4")
-    .go();  // Add go() to start typing immediately
-
-    new TypeIt("#location-title", { 
-        lifeLike: false, 
-        cursorChar: "",
-        speed: 0 
-    })
-    .type("C")
-    .pause(196)
-    .type("h")
-    .pause(80)
-    .type("â")
-    .pause(120)
-    .type("t")
-    .pause(116)
-    .type("e")
-    .pause(104)
-    .type("a")
-    .pause(162)
-    .type("u")
-    .pause(103)
-    .type(" ")
-    .pause(161)
-    .type("d")
-    .pause(103)
-    .type(" ")
-    .pause(135)
-    .type("'")
-    .pause(123)
-    .type("A")
-    .pause(100)
-    .type("l")
-    .pause(106)
-    .type("p")
-    .pause(181)
-    .type("h")
-    .pause(184)
-    .type("é")
-    .pause(45)
-    .type("r")
-    .pause(144)
-    .type("a")
-    .pause(100)
-    .type("n")
-    .go();  // Add go() to start typing immediately
-    setTimeout(() => {
-    var buttonIds = ['button_language_fr', 'button_language_en', 'button_language_sv'];
-
-    buttonIds.forEach(function (id) {
-        var button = document.getElementById(id);
-        if (button) {
-            button.classList.add('fade-in');
-        }
-    });
-    }, 5000);   
 });
 
 </script>
