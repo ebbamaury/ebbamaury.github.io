@@ -462,7 +462,8 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
+<!--
+<script src="js/vendor/ouical.js"></script>-->
 <script src="js/scripts.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
@@ -619,6 +620,12 @@
 
 
 <script>
+
+    function loadOuicalScript() {
+        var script = document.createElement('script');
+        script.src = 'js/vendor/ouical.js';
+        document.head.appendChild(script);
+    }
     var language_selection = "en";
     function showSections(language) {
         language_selection = language
@@ -643,7 +650,7 @@
             document.getElementById('address-name').textContent = "Château d'Alphéran";
             document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France";
             document.getElementById('rsvp-thank-you').textContent = "Merci !";
-            document.getElementById('rsvp-thank-you-message').textContent = "Nous sommes ravis de vous voir nous rejoindre pour notre grand jour.";
+            document.getElementById('rsvp-thank-you-message').textContent = "Nous nous réjouissons de vous voir à notre mariage !";
             document.getElementById('rsvp-confirm-attendance').textContent = "Confirmez votre présence";
             document.getElementById('rsvp-attendance-message').innerHTML = "Merci de confirmer votre présence avant le 1<sup>er</sup> mars 2024";
             document.getElementById('rsvp-attendance-message-cant').innerHTML = "Si vous ne pouvez pas assister à notre mariage, veuillez nous envoyer un email à <a href='mailto:ebbamaury@gmail.com'>ebbamaury@gmail.com</a>";
@@ -687,7 +694,7 @@
             document.getElementById('address-name').textContent = "Château d'Alphéran";
             document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, France";
             document.getElementById('rsvp-thank-you').textContent = "Thank you!";
-            document.getElementById('rsvp-thank-you-message').textContent = "We are glad to see you join us on our big day.";
+            document.getElementById('rsvp-thank-you-message').textContent = "We look forward to seeing you at our wedding!";
             document.getElementById('rsvp-attendance-message-cant').innerHTML = "If you cannot attend our wedding, please send us an email to <a href='mailto:ebbamaury@gmail.com'>ebbamaury@gmail.com</a>";
             document.getElementById('rsvp-confirm-attendance').textContent = "Confirm your attendance";
             document.getElementById('rsvp-attendance-message').textContent = "Please confirm your presence before March 1, 2024";
@@ -730,7 +737,7 @@
             document.getElementById('address-name').textContent = "Château d'Alphéran";
             document.getElementById('address-description').textContent = "675 Chem. du Château d'Alpheran, 13540 Aix-en-Provence, Frankrike";
             document.getElementById('rsvp-thank-you').textContent = "Tack!";
-            document.getElementById('rsvp-thank-you-message').textContent = "Vi ser fram emot att fira vår stora dag med er!";
+            document.getElementById('rsvp-thank-you-message').textContent = "Vi ser fram emot att se dig på vårt bröllop!";
             document.getElementById('rsvp-attendance-message-cant').innerHTML = "Om du inte kan närvara vid vårt bröllop, skicka ett mail till oss på <a href='mailto:ebbamaury@gmail.com'>ebbamaury@gmail.com</a>";
             document.getElementById('rsvp-confirm-attendance').textContent = "OSA";
             document.getElementById('rsvp-attendance-message').textContent = "Vänligen OSA senast 1 mars 2024";
@@ -764,7 +771,7 @@
         invitationSection = document.getElementById('invitation')
         invitationSection.style.display = 'block';        
 
-        
+        loadOuicalScript();
         smoothScrollTo('invitation');
     
 
