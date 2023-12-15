@@ -102,9 +102,9 @@
         <div class="container" style="margin-bottom:0px">
             <div class="row">
                 <div class="col-sm-12 text-center"  style="margin-top:30px;">
-                    <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr');showSlides(slideIndex=0)">Français</a>
-                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en');showSlides(slideIndex=0)">English v1</a>
-                    <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv');showSlides(slideIndex=0)">Svenska</a>
+                    <a id="button_language_fr" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('fr')">Français</a>
+                    <a id="button_language_en" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('en')">English v2</a>
+                    <a id="button_language_sv" class="btn btn-accent btn-margin btn-hidden btn-small" onclick="showSections('sv')">Svenska</a>
                 </div>
             </div>
         </div>
@@ -765,6 +765,9 @@
         invitationSection.style.display = 'block';        
 
         smoothScrollTo('invitation');
+
+        let slideIndex = 0;
+        showSlides();
     
 
         /*setTimeout(() => {
@@ -795,12 +798,8 @@
     var easeInOutCubic = function(t) {
         return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
     };
-
     
-</script>
-
-<script>
-    function showSlides(slideIndex) {
+    function showSlides() {
         let i;
         let slides = document.getElementsByClassName("mySlides");
         for (i = 0; i < slides.length; i++) {
@@ -811,9 +810,12 @@
             slideIndex = 1;
         }
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides(slideIndex+1), 3500); // Change slide every 2 seconds
+        setTimeout(showSlides, 3500); // Change slide every 2 seconds
     }
+
+    
 </script>
+
 
 
 </body>
