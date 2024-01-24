@@ -925,7 +925,7 @@ header .member-actions{
     transform:translateY(-50%)
 }
 
-.rsvp .rsvp-form .form-input-group i.fa-user,.rsvp .rsvp-form .form-input-group i.fa-users,.rsvp .rsvp-form .form-input-group i.fa-envelope,.rsvp .rsvp-form .form-input-group .fa-key .fa-lemon{
+.rsvp .rsvp-form .form-input-group i.fa-user,.rsvp .rsvp-form .form-input-group i.fa-users,.rsvp .rsvp-form .form-input-group i.fa-envelope,.rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-input-group .fa-lemon{
     font-size:16px;
     position:absolute;
     top:50%;
