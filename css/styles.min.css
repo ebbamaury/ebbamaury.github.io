@@ -1002,3 +1002,12 @@ body.modal-open{
     width: 100%;
     height: auto;
 }
+
+div.gift-div-list {
+    text-align: center;
+}
+
+ul.gift-ul-list {
+    display: inline-block;
+    text-align: left;
+}
