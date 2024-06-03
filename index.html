@@ -293,75 +293,6 @@
 
 
 
-<section class="rsvp text-center" id="rsvp" style="display: none; margin: 0; padding: 0; width: 100%; box-sizing: border-box;">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3 id="rsvp-thank-you">Thank you!</h3>
-                        <p id="rsvp-thank-you-message">We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3 id="rsvp-confirm-attendance">Confirm your attendance</h3>
-                <p id="rsvp-attendance-message">We would greatly appreciate if you could RSVP before 1st of March 2024</p>
-                <p id="rsvp-attendance-message-cant">If you cannot attend our wedding, please send us an email at <a href="mailto:ebbamaury@gmail.com">ebbamaury@gmail.com</a> </p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-plus-ones">
-                                <i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-email">
-                                <i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-name">
-                                <i class="fa-solid fa-pen"></i><input name="name" class="" placeholder="Your name" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" id="form-input-diet">
-                                <i class="fa-solid fa-seedling"></i><input name="diet" class="" placeholder="Do you have any dietary restrictions?">
-                            </div>
-                        </div>                                             
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="form-input-group"  id="form-input-brunch">
-                                <i class="fa-solid fa-mug-hot"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)">
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        <span id="rsvp-send-confirmation">Send confirmation</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section id="giftidea" class="section-padding" style="display: none;">
     <div class="text-center">
@@ -497,6 +428,75 @@
 
 
 
+<section class="rsvp text-center" id="rsvp" style="display: none; margin: 0; padding: 0; width: 100%; box-sizing: border-box;">
+
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3 id="rsvp-thank-you">Thank you!</h3>
+                        <p id="rsvp-thank-you-message">We are glad to see you join us on our big day.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 id="rsvp-confirm-attendance">Confirm your attendance</h3>
+                <p id="rsvp-attendance-message">We would greatly appreciate if you could RSVP before 1st of March 2024</p>
+                <p id="rsvp-attendance-message-cant">If you cannot attend our wedding, please send us an email at <a href="mailto:ebbamaury@gmail.com">ebbamaury@gmail.com</a> </p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" id="form-input-plus-ones">
+                                <i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="5" placeholder="How many people are you confirming?" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" id="form-input-email">
+                                <i class="fa-solid fa-envelope" ></i><input type="email" name="email" class="" placeholder="Your email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" id="form-input-name">
+                                <i class="fa-solid fa-pen"></i><input name="name" class="" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group" id="form-input-diet">
+                                <i class="fa-solid fa-seedling"></i><input name="diet" class="" placeholder="Do you have any dietary restrictions?">
+                            </div>
+                        </div>                                             
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="form-input-group"  id="form-input-brunch">
+                                <i class="fa-solid fa-mug-hot"></i><input name="brunch" class="" placeholder="Are you coming to the brunch? (Yes/No)">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        <span id="rsvp-send-confirmation">Send confirmation</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
