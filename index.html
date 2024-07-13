@@ -251,7 +251,7 @@
 
 
 
-<section id="giftidea" class="section-padding" style="display: none; margin-bottom: 30px;">
+<section id="giftidea" class="section-padding" style="display: none; margin-bottom: 10px;">
     <div class="text-center">
         <h3 id="giftidea-title">About gifts</h3>
     </div>
@@ -260,7 +260,7 @@
             <p id="giftidea-description">We know most of you are traveling far for our wedding and we do not expect gifts. But for the ones that have asked us, we have written some gift ideas below.</p>
         </div>
         <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center" style="margin-top: 0px;">
+            <div class="col-md-4 col-md-offset-4 text-center" style="margin-top: -30px;">
                 <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#gift-ideas">
                     <i class="fa-solid fa-gift"></i>&nbsp;&nbsp;<span id="gift-idea-btn">Gift ideas</span>
                 </a>
@@ -304,7 +304,7 @@
     </div>
 </section>
 
-<section id="guide" class="section-padding" style="display: none; margin-bottom: 30px;">
+<section id="guide" class="section-padding" style="display: none; margin-bottom: 10px;">
     <div class="text-center">
         <h3 id="guide-title">A small guide for Aix</h3>
     </div>
@@ -313,9 +313,9 @@
             <p id="guide-description">We know many of you will be exploring Aix-en-Provence and the South of France before and after the wedding. To help you make the most of your trip, we have put together a travel guide featuring our favorite spots.</p>
         </div>
         <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center" style="margin-top: 0px;">
+            <div class="col-md-4 col-md-offset-4 text-center" style="margin-top: -30px;" id="guide-download">
                 <a class="btn btn-accent btn-small" href="pdf/aSmallGuideToAix-en-Provence.pdf" download="aGuideToAix.pdf">
-                    <i class="fa-solid fa-signs-post"></i>&nbsp;&nbsp;<span id="guide-idea-btn">Download our guide</span>
+                    <i class="fa-solid fa-signs-post"></i>&nbsp;&nbsp;<span id="guide-btn">Download our guide</span>
                 </a>
             </div>
         </div>
@@ -701,11 +701,11 @@
             document.getElementById('dress-code-btn').textContent = "Code vestimentaire";
             document.getElementById('planning-title').textContent = 'Organisation';
             document.getElementById('day1').innerHTML = '31 août';
-            document.getElementById('event-ceremony').innerHTML = 'Cérémonie de mariage <span class="time"> 17h </span>';
+            document.getElementById('event-ceremony').innerHTML = 'Cérémonie de mariage <span class="time"> 16h30 </span>';
             document.getElementById('event-dinner').innerHTML = 'Dîner <span class="time"> 19h - 22h</span>';
             document.getElementById('event-party').innerHTML = 'Soirée dansante <span class="time"> 22h - 3h</span>';
             document.getElementById('day2').innerHTML = '1<sup>er</sup> septembre';
-            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 12h - 16h</span>';
+            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11h - 16h</span>';
             document.getElementById('dress-code-title').textContent = 'Élégance sous le soleil Provençal';
             document.getElementById('dress-code').innerHTML = "Nous aimerions que vous veniez élégamment habillés. Compte tenu de la chaleur du Sud de la France fin août, n'hésitez pas à choisir des costumes de couleur claire en tissus légers tels que le lin ou le coton. Des robes élégantes ou des ensembles formels sont recommandés. Adoptez l'esprit estival avec des tissus légers et fluides pour allier confort et style. <br> <br> Veuillez prendre un essuie de bain et un maillot de bain si vous souhaitez vous baigner pendant le brunch du dimanche.";
             document.getElementById("toastmasters-description").innerHTML = "Si vous souhaitez faire un discours au cours de la soirée, veuillez contacter nos toastmasters en envoyant un email à <a href='mailto:toastmaster.ebbamaury@gmail.com'>toastmaster.ebbamaury@gmail.com</a>.";
@@ -742,6 +742,9 @@
             document.getElementById("giftidea-description").textContent = "Nous savons que la plupart d’entre vous voyagent loin pour notre mariage et nous n’attendons pas de cadeaux. Mais pour ceux qui nous l’ont demandé, nous avons rédigé ci-dessous quelques idées cadeaux.";
             document.getElementById("gift-idea-btn").textContent = "Idées de cadeaux";
             document.getElementById("gift-idea-title").textContent = "Idées de cadeaux";
+            document.getElementById("guide-title").textContent = "Un petit guide pour Aix";
+            document.getElementById("guide-description").textContent = "Nous savons que beaucoup d'entre vous voyageront autour d'Aix-en-Provence et dans le sud de la France avant et après notre mariage. Pour vous aider à profiter au maximum de votre voyage, nous avons préparé un guide de voyage avec nos endroits préférés.";
+            document.getElementById("guide-download").innerHTML = '<a class="btn btn-accent btn-small" href="pdf/unPetitPourGuideAix-en-Provence.pdf" download="unGuidePourAix.pdf"> <i class="fa-solid fa-signs-post"></i>&nbsp;&nbsp;<span id="guide-btn">Télécharger notre guide</span> </a>';
         } 
         else if (language === 'en') {
             document.getElementById('invitation-title').textContent = "We are getting married!";
@@ -750,11 +753,11 @@
             document.getElementById('dress-code-btn').textContent = "Dress code";
             document.getElementById('planning-title').textContent = 'Planning';
             document.getElementById('day1').innerHTML = '31<sup>st</sup> August';
-            document.getElementById('event-ceremony').innerHTML = 'Wedding ceremony <span class="time"> 5PM</span>';
+            document.getElementById('event-ceremony').innerHTML = 'Wedding ceremony <span class="time"> 4.30PM</span>';
             document.getElementById('event-dinner').innerHTML = 'Dinner <span class="time"> 7PM - 10PM</span>';
             document.getElementById('event-party').innerHTML = 'Party <span class="time"> 10PM - 3AM</span>';
             document.getElementById('day2').innerHTML = '1<sup>st</sup> September';
-            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 12PM - 4PM</span>';
+            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11PM - 4PM</span>';
             document.getElementById('dress-code-title').textContent = 'Elegance under the Provencal sun';
             document.getElementById('dress-code').innerHTML = 'We would like you to come elegantly dressed. Given the heat in the South of France at the end of August, do not hesitate to choose light-colored suits in breezier fabrics such as linen or cotton. Elegant dresses or sets are recommended. Embrace the summer spirit with light and flowing fabrics to combine comfort and style. <br> <br> Bring a towel and swimsuit if you want to swim during the brunch on Sunday.';
             document.getElementById("toastmasters-description").innerHTML = "If you wish to make a speech during the evening, please contact our toastmasters by sending an email at <a href='mailto:toastmaster.ebbamaury@gmail.com'>toastmaster.ebbamaury@gmail.com</a>.";
@@ -791,6 +794,9 @@
             document.getElementById("giftidea-description").textContent = "We know that most of you are traveling far for our wedding and we do not expect gifts. But for those who have asked us, we have written below some gift ideas.";
             document.getElementById("gift-idea-btn").textContent = "Gift ideas";
             document.getElementById("gift-idea-title").textContent = "Some gift ideas";
+            document.getElementById("guide-title").textContent = "A little guide for Aix";
+            document.getElementById("guide-description").textContent = "We know that many of you will be traveling around Aix-en-Provence and the South of France before and after our wedding. To help you make the most of your trip, we have prepared a travel guide with our favorite places.";
+            document.getElementById("guide-download").innerHTML = '<a class="btn btn-accent btn-small" href="pdf/aSmallGuideToAix-en-Provence.pdf" download="aGuideToAix.pdf"> <i class="fa-solid fa-signs-post"></i>&nbsp;&nbsp;<span id="guide-btn">Download our guide</span> </a>';
         }   
         else if (language === 'sv') {
             document.getElementById('invitation-title').textContent = "Vi ska gifta oss!";
@@ -799,11 +805,11 @@
             document.getElementById('dress-code-btn').textContent = "Klädkod";
             document.getElementById('planning-title').textContent = 'Planering';
             document.getElementById('day1').innerHTML = '31 augusti';
-            document.getElementById('event-ceremony').innerHTML = 'Bröllopsceremoni <span class="time"> 17.00 </span>';
+            document.getElementById('event-ceremony').innerHTML = 'Bröllopsceremoni <span class="time"> 16.30 </span>';
             document.getElementById('event-dinner').innerHTML = 'Middag <span class="time"> 19.00 - 22.00</span>';
             document.getElementById('event-party').innerHTML = 'Fest <span class="time"> 22.00 - 3.00</span>';
             document.getElementById('day2').innerHTML = '1 september';
-            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 12.00 - 16.00</span>';
+            document.getElementById('event-brunch').innerHTML = 'Brunch <span class="time"> 11.00 - 16.00</span>';
             document.getElementById('dress-code-title').textContent = 'Elegans under den provensalska solen';
             document.getElementById('dress-code').innerHTML = 'Vi ser gärna att ni kommer finklädda i kläder som ni känner er bekväma i. Med tanke på värmen i södra Frankrike i slutet av augusti, så uppmuntras ljusa kostymer och svala klänningar. <br> <br> Ta med handduk och badkläder om ni vill bada under brunchen på söndagen.';
             document.getElementById("toastmasters-description").innerHTML = "Om du vill hålla ett tal under kvällen, kontakta våra toastmasters genom att skicka ett mail till <a href='mailto:toastmaster.ebbamaury@gmail.com'>toastmaster.ebbamaury@gmail.com</a>.";
@@ -840,6 +846,9 @@
             document.getElementById("giftidea-description").textContent = "Vi vet att de flesta av er reser långt för vårt bröllop och vi förväntar oss inga presenter. Men för de som har frågat oss, har vi skrivit ned några presentidéer nedan.";
             document.getElementById("gift-idea-btn").textContent = "Presentidéer";
             document.getElementById("gift-idea-title").textContent = "Presentidéer";
+            document.getElementById("guide-title").textContent = "En liten reseguide till Aix";
+            document.getElementById("guide-description").textContent = "Vi vet att många av er kommer att resa runt Aix-en-Provence och södra Frankrike före och efter vårt bröllop. För att hjälpa er att få ut mesta möjliga av er resa, har vi förberett en reseguide med våra favoritplatser.";
+            document.getElementById("guide-download").innerHTML = '<a class="btn btn-accent btn-small" href="pdf/enLitenGuideTillAix-en-Provence.pdf" download="enGuideTillAix.pdf"> <i class="fa-solid fa-signs-post"></i>&nbsp;&nbsp;<span id="guide-btn">Ladda ner vår guide</span> </a>';
         }
 
         document.getElementById('events').style.display = 'block';
